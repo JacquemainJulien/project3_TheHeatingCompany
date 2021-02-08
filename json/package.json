@@ -1,0 +1,31 @@
+{
+  "name": "project3_theheatingcompany",
+  "version": "1.0.0",
+  "description": "Heating company",
+  "main": "index.js",
+  "devDependencies": {},
+  "scripts": {
+    "clean": "rimraf dist",
+    "compile": "node-sass --output-style=expanded --source-map=true scss/screen.scss dist/screen.css",
+    "prefix": "postcss dist/screen.css -u postcss-prefixer -o dist/screen.css",
+    "minify": "cleancss --level=1 --source-map --source-map-inline-sources --output dist/screen.min.css dist/screen.css",
+    "dev": "npm run compile -- --watch",
+    "build": "npm run clean && npm run compile && npm run prefix && npm run minify"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/JacquemainJulien/project3_TheHeatingCompany.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/JacquemainJulien/project3_TheHeatingCompany/issues"
+  },
+  "homepage": "https://github.com/JacquemainJulien/project3_TheHeatingCompany#readme",
+  "dependencies": {
+    "clean-css-cli": "^4.3.0",
+    "node-sass": "^5.0.0",
+    "postcss-cli": "^8.3.1",
+    "postcss-prefixer": "^2.1.2"
+  }
+}
