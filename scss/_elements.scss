@@ -1,0 +1,39 @@
+h1 {
+  font-family: $bebas-kai;
+  font-size: 4.5rem;
+  color: #23201E;
+}
+
+h2 {
+  font-family: $bebas-kai;
+  font-size: 3.8rem;
+  color: $color-black;
+}
+
+h3 {
+  font-family: $bebas-kai;
+  font-size: 3rem;
+  color: $color-black;
+}
+
+.p1 {
+  font-family: $Roboto-light;
+  font-size: 2rem;
+  color: #23201E;
+}
+
+.p2 {
+  font-family: $Roboto-light;
+  font-size: 1.8rem;
+  color: #23201E;
+}
+
+a{
+    color: $color-orange;
+    font-family: $Roboto-light;
+    font-size: 2rem;
+    &:hover{
+        color:$color-red;
+    }
+}
+
