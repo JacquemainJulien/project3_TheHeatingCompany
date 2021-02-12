@@ -1,0 +1,106 @@
+body{
+    background-color: $color-greywhite;
+    box-sizing: border-box;
+}
+
+.c-btn{
+    &__offerte{
+        margin-right: 1.6rem;
+        z-index: 1;
+        position: relative;
+        padding: 1.55rem 4rem;
+        padding-top: 1.65rem;
+        color: $color-greywhite;
+        font-family: $bebas-kai;
+        font-size: 1.8rem;
+        background-color: transparent;
+        outline: none;
+        border: none;
+        transition: all 0.4s ease;
+        &:hover .c-btn__offerte-hover{
+            transform: translateX(0);
+        }
+        &:hover{
+            &:before{
+                content:"";
+                z-index: 1;
+                position: absolute;
+                left: 0;
+                top:0;
+                width: 100%;
+                height: 100%;
+                border: 2px solid $color-orange;
+            }
+        }
+        &:before{
+            content:"";
+            z-index: 1;
+            position: absolute;
+            left: 0;
+            top:0;
+            width: 100%;
+            height: 100%;
+            border: 2px solid $color-greywhite;
+        }
+        &:after{
+            content:"";
+            z-index: 2;
+            position: absolute;
+            left: 0;
+            top:0;
+            width: 100%;
+            height: 100%;
+            transition: all 0.4s ease;
+        }
+        &:hover{
+            color: $color-orange;
+            &:after{
+                transition: all 0.4s ease;
+                left: 0;
+                top:0;
+            }
+        }
+        &-inner{
+            z-index: -1;
+            overflow: hidden;
+            position: absolute;
+            left: 2px;
+            top: 2px;
+            width: 100%;
+            height: 100%;
+            background-color: $color-orange;
+        }
+        &-color{
+            position: relative;
+            display: block;
+            height: 100%;
+        }
+        &-hover{
+            position: absolute;
+            top:-2px;
+            left:-2px;
+            width: 100%;
+            height: 100%;
+            background-color: $color-greywhite;
+            border: solid 2px $color-orange;
+            transform: translateX(-100%);
+            transition: transform 0.4s ease;
+        }
+    }
+}
+.c-btn__large{
+    padding: 2.1rem 5rem;
+    padding-top: 2.3rem;
+    font-size: 3rem;
+}
+.c-btn__xlarge{
+    padding: 2.1rem 5rem;
+    padding-top: 2.3rem;
+    font-size: 4.5rem;
+}
+  
+.c-btn__bg{
+    background-color: $color-black;
+    height: 10rem;
+    padding: 5rem;
+}
