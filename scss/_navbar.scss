@@ -1,11 +1,4 @@
-.container-nav {
-padding-right: 0px!important;
-padding-left: 0px !important;
-// position: fixed; ??? fixed navbar komt over content
-margin-bottom: 10rem;
-top: 0;
-}
-
+  
 .c-topnav{
   background-color: $color-black;
   &__button {
@@ -56,20 +49,34 @@ top: 0;
   &__dropdown-content{
     display: none;
     position: absolute;
-    background-color: $color-greywhite;
     min-width: 22rem;
     box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
     z-index: 1;
+    margin-left: 5rem;
+
   }
   
   &__dropdown-item{
     float: none;
-    color: black;
+    color: white!important;
     padding: 12px 16px;
     text-decoration: none;
     display: block;
     text-align: left;
+    padding-left: 1.6rem;
+    padding-top: 1rem;
     margin-left: 0!important;
+    background-color: $color-orange;
+    border-bottom: 2px solid white;
+    &:active{
+      background-color: $color-greywhite;
+      color: $color-orange!important;
+      border-bottom: 2px solid black;
+    }
+    img{
+      width: auto;
+      margin-right: 1.1rem;
+    }
   }
 
   .c-nav2__dropdown:hover .c-nav2__dropdown-content {display: block;}

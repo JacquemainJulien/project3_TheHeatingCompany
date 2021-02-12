@@ -5,7 +5,7 @@ html {
 h1 {
   font-family: $bebas-kai;
   font-size: 4.5rem!important;
-  color: #23201E;
+  color: $color-black;
 }
 
 h2 {
@@ -23,14 +23,14 @@ h3 {
 .p1 {
   font-family: $Roboto-light;
   font-size: 2rem !important;
-  color: #23201e;
+  color: $color-black;
 }
 
 .p2 {
   font-family: $Roboto-light;
 
   font-size: 1.8rem !important;
-  color: #23201e;
+  color: $color-black;
 }
 
 a {
