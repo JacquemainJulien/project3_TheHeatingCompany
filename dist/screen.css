@@ -6,38 +6,38 @@ html {
 
 h1 {
   font-family: bebas-kai, sans-serif;
-  font-size: 4.5rem;
-  color: #23201E;
+  font-size: 4.5rem !important;
+  color: #23201e;
 }
 
 h2 {
   font-family: bebas-kai, sans-serif;
-  font-size: 3.8rem;
+  font-size: 3.8rem !important;
   color: #2e2b28;
 }
 
 h3 {
   font-family: bebas-kai, sans-serif;
-  font-size: 3rem;
+  font-size: 3rem !important;
   color: #2e2b28;
 }
 
 .p1 {
   font-family: "Roboto", sans-serif;
-  font-size: 2rem;
-  color: #23201E;
+  font-size: 2rem !important;
+  color: #23201e;
 }
 
 .p2 {
   font-family: "Roboto", sans-serif;
-  font-size: 1.8rem;
-  color: #23201E;
+  font-size: 1.8rem !important;
+  color: #23201e;
 }
 
 a {
   color: #e94e1e;
   font-family: "Roboto", sans-serif;
-  font-size: 2rem;
+  font-size: 2rem !important;
 }
 
 a:hover {
@@ -115,6 +115,24 @@ a:hover {
 
 .c-nav2 .c-nav2__dropdown:hover .c-nav2__dropdown-content {
   display: block;
+}
+
+.c-footer {
+  height: 680px;
+  background-color: #2e2b28;
+}
+
+.c-footer__container {
+  padding-top: 6.55rem;
+  display: flex;
+}
+
+.c-footer__container h3 {
+  color: #f7f8f9;
+}
+
+.c-footer__container p {
+  color: #f7f8f9;
 }
 
 /*# sourceMappingURL=screen.css.map */
