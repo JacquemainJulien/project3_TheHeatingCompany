@@ -1,0 +1,62 @@
+@import url("https://use.typekit.net/kvz0hti.css");
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap");
+h1 {
+  font-family: bebas-kai, sans-serif;
+  font-size: 4.5rem;
+  color: #23201E;
+}
+
+h2 {
+  font-family: bebas-kai, sans-serif;
+  font-size: 3.8rem;
+  color: #2e2b28;
+}
+
+h3 {
+  font-family: bebas-kai, sans-serif;
+  font-size: 3rem;
+  color: #2e2b28;
+}
+
+.p1 {
+  font-family: "Roboto", sans-serif;
+  font-size: 2rem;
+  color: #23201E;
+}
+
+.p2 {
+  font-family: "Roboto", sans-serif;
+  font-size: 1.8rem;
+  color: #23201E;
+}
+
+a {
+  color: #e94e1e;
+  font-family: "Roboto", sans-serif;
+  font-size: 2rem;
+}
+
+a:hover {
+  color: #c03218;
+}
+
+nav {
+  background-color: #2e2b28;
+  padding: 0;
+}
+
+nav .nav-button {
+  padding: 0.4rem 3rem 0.5rem 3rem;
+  color: white;
+  background-color: rgba(247, 248, 249, 0.5);
+  border: 2px solid white;
+  font-family: bebas-kai, sans-serif;
+  font-size: 2rem;
+}
+
+nav li a {
+  font-family: bebas-kai, sans-serif;
+  font-size: 2rem;
+  color: white;
+}
+/*# sourceMappingURL=screen.css.map */
