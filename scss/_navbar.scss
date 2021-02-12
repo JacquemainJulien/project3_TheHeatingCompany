@@ -1,0 +1,63 @@
+.container-nav {
+padding-right: 0px!important;
+padding-left: 0px !important;
+// position: fixed; ??? fixed navbar komt over content
+margin-bottom: 10rem;
+top: 0;
+}
+
+.c-topnav{
+  background-color: $color-black;
+  &__button {
+    padding: 0.4rem 3rem 0.5rem 3rem;
+    color: white;
+    background-color: $color-orange;
+    border: 2px solid white;
+    font-family: $bebas-kai;
+    font-size: 2rem;
+    &:hover{
+      color: $color-orange;
+      background-color: white;
+      border: 2px solid $color-orange;
+      font-size: 2rem;
+      font-family: $bebas-kai;
+    }
+  }
+  li a {
+    margin-left: 7.5rem;
+    font-family: $bebas-kai;
+    font-size: 2rem;
+    color: white;
+  }
+}
+.c-nav2{
+  background-color: white;
+  &__logo{
+    width: 19rem;
+    height: 4.3rem;
+  }
+  li a {
+    margin-left: 5rem;
+    font-family: $bebas-kai;
+    font-size: 2rem;
+    color: $color-orange;
+    &:active{
+      color: $color-black;
+    }
+  }
+
+  &__dropdown{
+    position: relative;
+    display: inline-block;
+  }
+  
+  &__dropdown-content{
+    display: none;
+    position: absolute;
+    background-color: $color-greywhite;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+  }
+  .c-nav2__dropdown:hover .c-nav2__dropdown-content {display: block;}
+}
