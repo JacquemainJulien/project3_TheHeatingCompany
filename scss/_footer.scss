@@ -1,0 +1,14 @@
+.c-footer {
+  height: 680px;
+  background-color: $color-black;
+  &__container {
+    padding-top: 6.55rem;
+    display: flex;
+    h3 {
+      color: $color-greywhite;
+    }
+    p {
+      color: $color-greywhite;
+    }
+  }
+}
