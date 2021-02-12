@@ -1,14 +1,105 @@
 .c-footer {
-  height: 680px;
+  height: 68rem;
   background-color: $color-black;
+  @include media-breakpoint-down(lg) {
+    height: 90rem;
+  }
+  @include media-breakpoint-down(sm) {
+    height: 115rem;
+  }
+  @include media-breakpoint-down(xs) {
+    height: 132rem;
+  }
   &__container {
     padding-top: 6.55rem;
     display: flex;
     h3 {
       color: $color-greywhite;
+      margin-bottom: $margin-h3;
+      @include media-breakpoint-down(sm) {
+        margin-bottom: 2rem;
+      }
     }
     p {
       color: $color-greywhite;
+    }
+    a {
+      display: block;
+      margin-top: 0.8rem;
+    }
+    .o-adres {
+      @include media-breakpoint-down(sm) {
+        margin-top: $margin-h3;
+      }
+    }
+    .o-volg {
+      @include media-breakpoint-down(xs) {
+        margin-top: $margin-h3;
+      }
+    }
+    .p-italic {
+      font-style: italic;
+      font-family: $Roboto-light;
+      font-size: 2rem !important;
+      @include media-breakpoint-down(lg) {
+        margin-bottom: $margin-h1;
+      }
+    }
+    .p-underline {
+      text-decoration: underline;
+      font-family: $Roboto-light;
+      font-size: 2rem !important;
+      color: $color-greywhite;
+    }
+  }
+  hr {
+    margin-top: 4.5rem;
+    background-color: $color-greywhite;
+    width: 100%;
+    margin-bottom: 10rem;
+    @include media-breakpoint-down(lg) {
+      margin-bottom: $margin-h1;
+    }
+  }
+  .c-input__group {
+    margin-top: $margin-h3;
+    display: flex;
+    input {
+      width: 25.8rem;
+      height: 5.1rem;
+      color: $color-greywhite;
+      margin-right: 0.7rem;
+      font-size: initial;
+      padding-left: 1.5rem;
+    }
+    ::placeholder {
+      font-family: $bebas-kai;
+      font-size: 2rem;
+      color: $color-black;
+    }
+    button {
+      padding: 0.4rem 3rem 0.5rem 3rem;
+      color: white;
+      background-color: $color-orange;
+      border: 2px solid white;
+      font-family: $bebas-kai;
+      font-size: 2rem;
+      &:hover {
+        color: $color-orange;
+        background-color: white;
+        border: 2px solid $color-orange;
+        font-size: 2rem;
+        font-family: $bebas-kai;
+      }
+    }
+    @include media-breakpoint-down(sm) {
+      margin-bottom: $margin-h3;
+    }
+  }
+  .o-copyright {
+    margin-top: 8.6rem;
+    @include media-breakpoint-down(sm) {
+      margin-top: 11rem;
     }
   }
 }
