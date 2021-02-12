@@ -1,8 +1,9 @@
 @import "../bootstrap-4.5.2/scss/mixins/breakpoints";
 
-@import "settings";
-@import "elements";
-@import "navbar";
+@import 'settings';
+@import 'elements';
+
+@import 'navbar';
+@import 'footer';
+@import 'referentie-cards';
 @import "component-button";
-
-
