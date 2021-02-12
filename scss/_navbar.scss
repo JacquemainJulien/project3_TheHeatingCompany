@@ -22,6 +22,7 @@ top: 0;
       font-size: 2rem;
       font-family: $bebas-kai;
     }
+
   }
   li a {
     margin-left: 7.5rem;
@@ -31,6 +32,7 @@ top: 0;
   }
 }
 .c-nav2{
+
   background-color: white;
   &__logo{
     width: 19rem;
@@ -45,19 +47,30 @@ top: 0;
       color: $color-black;
     }
   }
-
+  
   &__dropdown{
-    position: relative;
-    display: inline-block;
+    float: left;
+    overflow: hidden;
   }
   
   &__dropdown-content{
     display: none;
     position: absolute;
     background-color: $color-greywhite;
-    min-width: 160px;
+    min-width: 22rem;
     box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
     z-index: 1;
   }
+  
+  &__dropdown-item{
+    float: none;
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+    margin-left: 0!important;
+  }
+
   .c-nav2__dropdown:hover .c-nav2__dropdown-content {display: block;}
 }

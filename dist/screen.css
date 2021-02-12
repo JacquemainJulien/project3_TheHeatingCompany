@@ -25,13 +25,13 @@ h3 {
 .p1 {
   font-family: "Roboto", sans-serif;
   font-size: 2rem !important;
-  color: #23201e;
+  color: #23201E;
 }
 
 .p2 {
   font-family: "Roboto", sans-serif;
   font-size: 1.8rem !important;
-  color: #23201e;
+  color: #23201E;
 }
 
 a {
@@ -100,17 +100,27 @@ a:hover {
 }
 
 .c-nav2__dropdown {
-  position: relative;
-  display: inline-block;
+  float: left;
+  overflow: hidden;
 }
 
 .c-nav2__dropdown-content {
   display: none;
   position: absolute;
   background-color: #f7f8f9;
-  min-width: 160px;
+  min-width: 22rem;
   box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
   z-index: 1;
+}
+
+.c-nav2__dropdown-item {
+  float: none;
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  text-align: left;
+  margin-left: 0 !important;
 }
 
 .c-nav2 .c-nav2__dropdown:hover .c-nav2__dropdown-content {
