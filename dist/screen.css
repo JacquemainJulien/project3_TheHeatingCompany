@@ -3,15 +3,11 @@
 html {
   font-size: 62.5%;
 }
-body {
-  background-color: #f7f8f9;
-  box-sizing: border-box;
-}
 
-html h1 {
+h1 {
   font-family: bebas-kai, sans-serif;
   font-size: 4.5rem !important;
-  color: #23201E;
+  color: #2e2b28;
 }
 
 h2 {
@@ -139,114 +135,6 @@ a:hover {
   display: block;
 }
 
-.c-btn__offerte {
-  margin-right: 1.6rem;
-  z-index: 1;
-  position: relative;
-  padding: 1.55rem 4rem;
-  padding-top: 1.65rem;
-  color: #f7f8f9;
-  font-family: bebas-kai, sans-serif;
-  font-size: 1.8rem;
-  background-color: transparent;
-  outline: none;
-  border: none;
-  transition: all 0.4s ease;
-}
-
-.c-btn__offerte:hover .c-btn__offerte-hover {
-  transform: translateX(0);
-}
-
-.c-btn__offerte:hover:before {
-  content: "";
-  z-index: 1;
-  position: absolute;
-  left: 0;
-  top: 0;
-  width: 100%;
-  height: 100%;
-  border: 2px solid #e94e1e;
-}
-
-.c-btn__offerte:before {
-  content: "";
-  z-index: 1;
-  position: absolute;
-  left: 0;
-  top: 0;
-  width: 100%;
-  height: 100%;
-  border: 2px solid #f7f8f9;
-}
-
-.c-btn__offerte:after {
-  content: "";
-  z-index: 2;
-  position: absolute;
-  left: 0;
-  top: 0;
-  width: 100%;
-  height: 100%;
-  transition: all 0.4s ease;
-}
-
-.c-btn__offerte:hover {
-  color: #e94e1e;
-}
-
-.c-btn__offerte:hover:after {
-  transition: all 0.4s ease;
-  left: 0;
-  top: 0;
-}
-
-.c-btn__offerte-inner {
-  z-index: -1;
-  overflow: hidden;
-  position: absolute;
-  left: 2px;
-  top: 2px;
-  width: 100%;
-  height: 100%;
-  background-color: #e94e1e;
-}
-
-.c-btn__offerte-color {
-  position: relative;
-  display: block;
-  height: 100%;
-}
-
-.c-btn__offerte-hover {
-  position: absolute;
-  top: -2px;
-  left: -2px;
-  width: 100%;
-  height: 100%;
-  background-color: #f7f8f9;
-  border: solid 2px #e94e1e;
-  transform: translateX(-100%);
-  transition: transform 0.4s ease;
-}
-
-.c-btn__large {
-  padding: 2.1rem 5rem;
-  padding-top: 2.3rem;
-  font-size: 3rem;
-}
-
-.c-btn__xlarge {
-  padding: 2.1rem 5rem;
-  padding-top: 2.3rem;
-  font-size: 4.5rem;
-}
-
-.c-btn__bg {
-  background-color: #2e2b28;
-  height: 10rem;
-  padding: 5rem;
-=======
 .c-footer {
   height: 68rem;
   background-color: #2e2b28;
@@ -395,6 +283,7 @@ a:hover {
 .c-container__cards {
   margin-top: 5rem;
   display: flex;
+  margin-bottom: 5rem;
 }
 
 .c-container__cards .c-card {
@@ -463,7 +352,120 @@ a:hover {
   .c-container__cards .c-card .o-ondertekst {
     font-size: 1.8rem;
   }
+}
 
+body {
+  background-color: #f7f8f9;
+  box-sizing: border-box;
+}
+
+.c-btn__offerte {
+  margin-right: 1.6rem;
+  z-index: 1;
+  position: relative;
+  padding: 1.55rem 4rem;
+  padding-top: 1.65rem;
+  color: #f7f8f9;
+  font-family: bebas-kai, sans-serif;
+  font-size: 1.8rem;
+  background-color: transparent;
+  outline: none;
+  border: none;
+  transition: all 0.4s ease;
+}
+
+.c-btn__offerte:hover .c-btn__offerte-hover {
+  transform: translateX(0);
+}
+
+.c-btn__offerte:hover:before {
+  content: "";
+  z-index: 1;
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  border: 2px solid #e94e1e;
+}
+
+.c-btn__offerte:before {
+  content: "";
+  z-index: 1;
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  border: 2px solid #f7f8f9;
+}
+
+.c-btn__offerte:after {
+  content: "";
+  z-index: 2;
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  transition: all 0.4s ease;
+}
+
+.c-btn__offerte:hover {
+  color: #e94e1e;
+}
+
+.c-btn__offerte:hover:after {
+  transition: all 0.4s ease;
+  left: 0;
+  top: 0;
+}
+
+.c-btn__offerte-inner {
+  z-index: -1;
+  overflow: hidden;
+  position: absolute;
+  left: 2px;
+  top: 2px;
+  width: 100%;
+  height: 100%;
+  background-color: #e94e1e;
+}
+
+.c-btn__offerte-color {
+  position: relative;
+  display: block;
+  height: 100%;
+}
+
+.c-btn__offerte-hover {
+  position: absolute;
+  top: -2px;
+  left: -2px;
+  width: 100%;
+  height: 100%;
+  background-color: #f7f8f9;
+  border: solid 2px #e94e1e;
+  transform: translateX(-100%);
+  transition: transform 0.4s ease;
+}
+
+.c-btn__large {
+  padding: 2.1rem 5rem;
+  padding-top: 2.3rem;
+  font-size: 3rem;
+}
+
+.c-btn__xlarge {
+  padding: 2.1rem 5rem;
+  padding-top: 2.3rem;
+  font-size: 4.5rem;
+}
+
+.c-btn__bg {
+  background-color: #2e2b28;
+  height: 10rem;
+  padding: 5rem;
 }
 
 /*# sourceMappingURL=screen.css.map */
