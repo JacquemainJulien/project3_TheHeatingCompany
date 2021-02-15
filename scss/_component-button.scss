@@ -1,15 +1,10 @@
-body{
-    background-color: $color-greywhite;
-    box-sizing: border-box;
-}
-
 .c-btn{
     &__offerte{
         margin-right: 1.6rem;
         z-index: 1;
         position: relative;
-        padding: 1.55rem 4rem;
-        padding-top: 1.65rem;
+        /* padding: 1.55rem 4rem;*/
+        padding-top: 0.75rem; 
         color: $color-greywhite;
         font-family: $bebas-kai;
         font-size: 1.8rem;
@@ -17,6 +12,8 @@ body{
         outline: none;
         border: none;
         transition: all 0.4s ease;
+        max-height: 3.1rem;
+        width: 11.2rem;
         &:hover .c-btn__offerte-hover{
             transform: translateX(0);
         }
@@ -89,13 +86,14 @@ body{
     }
 }
 .c-btn__large{
-    padding: 2.1rem 5rem;
-    padding-top: 2.3rem;
+    max-height: 6.9rem;
+    width: 18.1rem;
+
     font-size: 3rem;
 }
 .c-btn__xlarge{
-    padding: 2.1rem 5rem;
-    padding-top: 2.3rem;
+    max-height: 8.6rem;
+    width: 23.1rem;
     font-size: 4.5rem;
 }
   
@@ -103,4 +101,139 @@ body{
     background-color: $color-black;
     height: 10rem;
     padding: 5rem;
+}
+
+//primary btn
+
+.c-btn{
+    width: 14.8rem;
+    height: 5.5rem;
+    cursor: pointer;
+    background-color: $color-greywhite;
+    border: 1px solid transparent;
+    box-shadow: 2px 5px 8px 0px rgba($color-orange, 0.35);
+    outline: none;
+    transition: all 1.5s ease-in-out, color 0.4s 1.5s ease;
+    &:hover{
+        transition: all 1.5s ease-in-out, background-color 0.4s 1.5s ease;
+/*         background-color: $color-orange; */
+    }
+    &:hover svg{
+        stroke-dashoffset: -480;
+        stroke: $color-orange;
+    }
+/*     &:hover .c-btn__txt{
+        color: $color-greywhite;
+    } */
+
+    &__center{
+        width: 14.8rem;
+        height: 5.5rem;
+        position: relative;
+    }
+    &__txt{
+        color: $color-orange;
+        font-size: 1.8rem;
+        font-family: $bebas-kai;
+      /*   transition: color 0.4s 1.5s ease; */
+    }
+    svg{
+        position: absolute;
+        left:0;
+        top:0;
+        fill: none;
+        stroke: $color-greywhite;
+        stroke-dasharray: 150 480;
+        stroke-dashoffset: 150;
+        transition: all 1.5s ease-in-out, stroke 1s ease;
+    }
+}
+
+.c-btn-large{
+    width: 18rem;
+    height: 6.9rem;
+    cursor: pointer;
+    background-color: $color-greywhite;
+    border: 1px solid transparent;
+    box-shadow: 2px 5px 8px 0px rgba($color-orange, 0.35);
+    outline: none;
+    transition: all 1.5s ease-in-out, background-color 0.4s 1.5s ease, color 0.4s 1.5s ease;
+    &:hover{
+        transition: all 1.5s ease-in-out;
+    }
+    &:hover svg{
+        stroke-dashoffset: -480;
+        stroke: $color-orange; 
+        
+    }
+
+    &__center{
+        width: 18rem;
+        height: 6.9rem;
+        position: relative;
+    }
+    &__txt{
+        color: $color-orange;
+        font-size: 3rem;
+        font-family: $bebas-kai;
+    }
+    svg{
+        position: absolute;
+        left:0;
+        top:0;
+        fill: none;
+        stroke: $color-greywhite;
+        stroke-dasharray: 150 480;
+        stroke-dashoffset: 150;
+        transition: all 1.5s ease-in-out, stroke 1s  ease;
+     
+    }
+}
+
+.c-btn-xlarge{
+    width: 23.1rem;
+    height: 8.6rem;
+    cursor: pointer;
+    background-color: $color-greywhite;
+    border: 1px solid transparent;
+    box-shadow: 2px 5px 8px 0px rgba($color-orange, 0.35);
+    outline: none;
+    transition: all 1.5s ease-in-out, background-color 0.4s 1.5s ease, color 0.4s 1.5s ease;
+    &:hover{
+        transition: all 1.5s ease-in-out;
+    }
+    &:hover svg{
+        stroke-dashoffset: -480;
+        stroke: $color-orange;   
+    }
+
+    &__center{
+        width: 23.1rem;
+        height: 8.6rem;
+        position: relative;
+    }
+    &__txt{
+        color: $color-orange;
+        font-size: 4.5rem;
+        font-family: $bebas-kai;
+        transition: all 0.4s ease;
+    }
+    svg{
+        position: absolute;
+        left:0;
+        top:0;
+        fill: none;
+        stroke: $color-greywhite;
+        stroke-dasharray: 200 395;
+        stroke-dashoffset: 200;
+        transition: all 1.5s ease-in-out, stroke 1s ease;
+     
+    }
+}
+
+.c-btns{
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
 }
