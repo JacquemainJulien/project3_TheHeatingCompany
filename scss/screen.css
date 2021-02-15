@@ -1,6 +1,10 @@
 @import url("https://use.typekit.net/kvz0hti.css");
 @import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap");
-h1 {
+html {
+  font-size: 62.5%;
+}
+
+html h1 {
   font-family: bebas-kai, sans-serif;
   font-size: 4.5rem;
   color: #23201E;
@@ -40,23 +44,81 @@ a:hover {
   color: #c03218;
 }
 
-nav {
-  background-color: #2e2b28;
-  padding: 0;
+.container-nav {
+  padding-right: 0px !important;
+  padding-left: 0px !important;
+  margin-bottom: 10rem;
+  top: 0;
 }
 
-nav .nav-button {
+.c-topnav {
+  background-color: #2e2b28;
+}
+
+.c-topnav__button {
   padding: 0.4rem 3rem 0.5rem 3rem;
   color: white;
-  background-color: rgba(247, 248, 249, 0.5);
+  background-color: #e94e1e;
   border: 2px solid white;
   font-family: bebas-kai, sans-serif;
   font-size: 2rem;
 }
 
-nav li a {
+.c-topnav__button:hover {
+  color: #e94e1e;
+  background-color: white;
+  border: 2px solid #e94e1e;
+  font-size: 2rem;
+  font-family: bebas-kai, sans-serif;
+}
+
+.c-topnav li a {
+  margin-left: 7.5rem;
   font-family: bebas-kai, sans-serif;
   font-size: 2rem;
   color: white;
+}
+
+.c-nav2 {
+  background-color: white;
+}
+
+.c-nav2__logo {
+  width: 19rem;
+  height: 4.3rem;
+}
+
+.c-nav2 li a {
+  margin-left: 5rem;
+  font-family: bebas-kai, sans-serif;
+  font-size: 2rem;
+  color: #e94e1e;
+}
+
+.c-nav2 li a:active {
+  color: #2e2b28;
+}
+
+.c-nav2__dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.c-nav2__dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f7f8f9;
+  min-width: 160px;
+  -webkit-box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+          box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  z-index: 1;
+}
+
+.c-nav2 .c-nav2__dropdown:hover .c-nav2__dropdown-content {
+  display: block;
+}
+
+body {
+  background-color: #f7f8f9;
 }
 /*# sourceMappingURL=screen.css.map */

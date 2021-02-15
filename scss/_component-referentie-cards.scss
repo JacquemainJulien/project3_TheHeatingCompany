@@ -1,0 +1,59 @@
+.c-container__cards {
+  margin-top: 5rem;
+  display: flex;
+  margin-bottom: 5rem;
+  .c-card {
+    margin: 1rem 1rem;
+    width: 50rem;
+    height: 64rem;
+    background-color: $color-greywhite;
+    box-shadow: 2px 4px 6px $color-orange;
+    padding: 3rem 7rem;
+    @include media-breakpoint-down(sm) {
+      width: 45rem;
+      height: 65rem;
+      padding: 4rem;
+    }
+
+    h1 {
+      margin-top: 1rem;
+      z-index: 2;
+      text-align: center;
+      font-size: 3.8rem !important;
+      text-shadow: 2px 3px 3px $color-black;
+      color: $color-greywhite;
+      position: relative;
+    }
+    hr {
+      width: 24.3rem;
+      height: 3rem;
+      background-color: $color-orange;
+      z-index: 1;
+      position: absolute;
+    }
+    .o-titel {
+      display: flex;
+      justify-content: center;
+    }
+    .o-italic {
+      max-height: 15rem;
+      overflow-y: scroll;
+      margin-top: $margin-p;
+      font-style: italic;
+      font-family: $Roboto-light;
+      font-size: 2rem !important;
+      text-align: center;
+      margin-bottom: 5rem;
+      @include media-breakpoint-down(sm) {
+        font-size: 1.8rem;
+        margin-bottom: 5rem;
+      }
+    }
+    .o-ondertekst {
+      margin-bottom: $margin-p;
+      @include media-breakpoint-down(sm) {
+        font-size: 1.8rem;
+      }
+    }
+  }
+}
