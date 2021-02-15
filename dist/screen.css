@@ -468,4 +468,44 @@ body {
   padding: 5rem;
 }
 
+.c-container__cards--team {
+  display: flex;
+  margin: 5rem;
+}
+
+.c-container__cards--team .c-card--team {
+  width: 45rem;
+  height: 56rem;
+  margin-bottom: 8rem;
+  margin-right: 5rem;
+  position: relative;
+}
+
+.c-container__cards--team .c-card--team .c-overlay {
+  width: 25rem;
+  height: 5rem;
+  background-color: #fff;
+  opacity: 0.5;
+  z-index: 1;
+  position: absolute;
+  bottom: 2.4rem;
+  right: 1.7rem;
+}
+
+.c-container__cards--team .c-card--team .c-overlay__text {
+  position: absolute;
+  bottom: 1.5rem;
+  left: 20rem;
+  z-index: 1;
+}
+
+.c-container__cards--team .c-card--team .c-overlay__text h3 {
+  color: white;
+  line-height: 1rem;
+}
+
+.c-container__cards--team .c-card--team .c-overlay__text p {
+  color: #2e2b28;
+}
+
 /*# sourceMappingURL=screen.css.map */
