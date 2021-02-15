@@ -8,11 +8,13 @@
     <link rel="stylesheet" href="bootstrap-4.5.2/scss/bootstrap.css"/>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
 
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
     <title>Heating company</title>
 </head>
 
 <body>
-    <div >
+    <div id="navbar" class="fixed-top">
         <nav class="c-topnav navbar navbar-expand-lg">
                 <div class="container">
                         <a class="navbar-brand">
@@ -23,69 +25,71 @@
                     <div class="justify-content-end">
                     <ul class="navbar-nav">
                         <li class="">
-                        <a class="" href="#">Features</a>
+                        <a class="" href="#">over ons</a>
                         </li>
                         <li class="">
-                        <a class="" href="#">Pricing</a>
+                        <a class="" href="#">Attesten</a>
                         </li>
                     </ul>
                     </div>
                 </div>
         </nav>
+        
         <nav class="c-nav2 navbar navbar-expand-sm">
                 <div class="container">
                         <a class="navbar-brand">
-                        <img class="c-nav2__logo" src="img/logo-klein.svg"  alt="logo-klein">
+                        <img class="c-nav2__logo" src="/img/logo-klein.png"  alt="logo-klein">
                         </a>
-                    <div class="justify-content-end">
-                    <ul class="navbar-nav">
-                        <li class="">
-                        <a class="" href="/index.html#">Home</a>
-                        </li>
-                        <li class="c-nav2__dropdown">
-                            <a class="" href="#">Plaatsing</a>
-                            <div class="c-nav2__dropdown-content">
-                                <a class="c-nav2__dropdown-item" href="#"><img src="/img/plaatsing-logo.svg">Plaatsing</a>
-                                <a class="c-nav2__dropdown-item" href="#"><img src="/img/plaatsing-logo.svg">Residentie </a>
-                                <a class="c-nav2__dropdown-item" href="#"><img src="/img/plaatsing-logo.svg">Woning </a>
-                            </div>
-                        </li>
-                        <li class="">
-                            <a class="" href="#">Oplossingen</a>
-                        </li>
-                        <li class="">
-                            <a class="" href="#">Onderhoud</a>
-                        </li>
-                        <li class="">
-                            <a class="" href="#">Realisaties</a>
-                        </li>
-                        <li class="">
-                            <a class="" href="#">Contact</a>
-                        </li>
-                    </ul>
+                    <input type="checkbox" name="" id="chk1">
+                        <ul class="navbar-nav nav">
+                            <li class="c-nav2__item">
+                            <a class="" href="/index.html#">Home</a>
+                            </li>
+                            <li class="c-nav2__item c-nav2__dropdown">
+                                <a class="" href="#">Plaatsing</a>
+                                <div class="c-nav2__dropdown-content">
+                                    <a class="c-nav2__dropdown-item" href="#"><img src="/img/plaatsing-logo.svg">Plaatsing</a>
+                                    <a class="c-nav2__dropdown-item" href="#"><img src="/img/plaatsing-logo.svg">Residentie </a>
+                                    <a class="c-nav2__dropdown-item" href="#"><img src="/img/plaatsing-logo.svg">Woning </a>
+                                </div>
+                            </li>
+                            <!-- Screen smaller 600px -->
+                            <li class="c-nav2__item c-nav2__dropdown-small">
+                                <a class="c-nav2__dropdown-small-title" href="#"> Plaatsing</a>
+                                <a class="c-nav2__dropdown-small-item" href="#"> Plaatsing</a>
+                                <a class="c-nav2__dropdown-small-item" href="#"> Residentie </a>
+                                <a class="c-nav2__dropdown-small-item" href="#"> Woning </a>
+                            </li>
+                            <li class="c-nav2__item">
+                                <a class="" href="#">Oplossingen</a>
+                            </li>
+                            <li class="c-nav2__item">
+                                <a class="" href="#">Onderhoud</a>
+                            </li>
+                            <li class="c-nav2__item">
+                                <a class="" href="#">Realisaties</a>
+                            </li>
+                            <li class="c-nav2__item">
+                                <a class="" href="#">Contact</a>
+                            </li>
+                        </ul>
+                    <div class="menu">
+                        <label for="chk1">
+                        <i id="bar" class="fa fa-bars"></i>
+                        </label>
+                    </div>
                     </div>
                 </div>
-                </div>
-                <button class="navbar-toggler collapsed" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-                <div class="navbar-collapse collapse" id="navbarSupportedContent">
-                    <ul class="list-group bg-primary d-block d-sm-none">
-                        <li class="list-unstyled border-0 p-2"> <a href="" class="text-dark"><i class="fa fa-chevron-right"> </i>   Product 1 </a></li>
-                        <li class="list-unstyled border-0 p-2"> <a href="" class="text-dark"><i class="fa fa-chevron-right"> </i>   Product 2 </a></li>
-                        <li class="list-unstyled border-0 p-2"> <a href="" class="text-dark"><i class="fa fa-chevron-right"> </i>   Product 3 </a></li>
-                        <li class="list-unstyled border-0 p-2"> <a href="" class="text-dark"><i class="fa fa-chevron-right"> </i>   Product 4 </a></li>
-                        <li class="list-unstyled border-0 p-2"> <a href="" class="text-dark"><i class="fa fa-chevron-right"> </i>   Product 5 </a></li>
-                        <li class="list-unstyled border-0 p-2"> <a href="" class="text-dark"><i class="fa fa-chevron-right"> </i>   Product 6 </a></li>
-                        <li class="list-unstyled border-0 p-2"> <a href="" class="text-dark"><i class="fa fa-chevron-right"> </i>   Product 7 </a></li>
-                    </ul>
                 </div>
         </nav>
     </div>
 
 
 
+
     <!-- custom grid test container xl= 1590px -->
+
+    <main>
 
     <div class="container" style="height: 1500px;">
         <div class="row">
@@ -104,8 +108,9 @@
         </div>
     </div>
 
-    
+    </main>
 
 
 </body>
+
 </html> 
