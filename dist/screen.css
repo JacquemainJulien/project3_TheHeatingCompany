@@ -14,6 +14,30 @@ h1 {
   color: #2e2b28;
 }
 
+@media (max-width: 575.98px) {
+  h1 {
+    font-size: 2.8rem !important;
+  }
+}
+
+@media (max-width: 767.98px) {
+  h1 {
+    font-size: 3.2rem !important;
+  }
+}
+
+@media (max-width: 991.98px) {
+  h1 {
+    font-size: 3.8rem !important;
+  }
+}
+
+@media (max-width: 1199.98px) {
+  h1 {
+    font-size: 4rem !important;
+  }
+}
+
 h2 {
   font-family: bebas-kai, sans-serif;
   font-size: 3.8rem !important;
@@ -759,6 +783,73 @@ a:hover {
 
 .c-realisaties__filter h3:hover hr {
   width: calc(100% + 1.5rem);
+}
+
+.c-map {
+  margin: 15rem 0;
+  text-align: center;
+}
+
+.c-map h1 {
+  font-size: 5.5rem !important;
+  margin-bottom: 2.4rem;
+}
+
+@media (max-width: 575.98px) {
+  .c-map h1 {
+    font-size: 2.8rem !important;
+  }
+}
+
+@media (max-width: 767.98px) {
+  .c-map h1 {
+    font-size: 3.2rem !important;
+  }
+}
+
+@media (max-width: 991.98px) {
+  .c-map h1 {
+    font-size: 3.8rem !important;
+  }
+}
+
+@media (max-width: 1199.98px) {
+  .c-map h1 {
+    font-size: 4rem !important;
+  }
+}
+
+.c-map--content {
+  margin: 4rem 0 15rem 0;
+}
+
+#mapid {
+  width: 100%;
+  height: 80rem;
+}
+
+@media (max-width: 575.98px) {
+  #mapid {
+    height: 50rem;
+  }
+}
+
+@media (min-width: 576px) {
+  #mapid {
+    height: 60rem;
+  }
+}
+
+@media (min-width: 768px) {
+  #mapid {
+    height: 65rem;
+  }
+}
+
+@media (min-width: 992px) {
+  #mapid {
+    height: 70rem;
+  }
 }
 
 /*# sourceMappingURL=screen.css.map */

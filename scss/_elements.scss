@@ -1,26 +1,38 @@
 html {
   font-size: 62.5%;
 }
-main{
+main {
   margin-top: 25rem;
 }
 
 h1 {
-
   font-family: $bebas-kai;
-  font-size: 4.5rem!important;
+  font-size: 4.5rem !important;
   color: $color-black;
+
+  @include media-breakpoint-down(xs) {
+    font-size: 2.8rem !important;
+  }
+  @include media-breakpoint-down(sm) {
+    font-size: 3.2rem !important;
+  }
+  @include media-breakpoint-down(md) {
+    font-size: 3.8rem !important;
+  }
+  @include media-breakpoint-down(lg) {
+    font-size: 4rem !important;
+  }
 }
 
 h2 {
   font-family: $bebas-kai;
-  font-size: 3.8rem!important;
+  font-size: 3.8rem !important;
   color: $color-black;
 }
 
 h3 {
   font-family: $bebas-kai;
-  font-size: 3rem!important;
+  font-size: 3rem !important;
   color: $color-black;
 }
 
