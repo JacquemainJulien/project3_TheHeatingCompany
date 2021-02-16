@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="dist/screen.css" />
+    <link rel="stylesheet" href="bootstrap-4.5.2/scss/bootstrap.css" />
+
+    <!-- Leaflet CSS -->
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css" integrity="sha512-xodZBNTC5n17Xt2atTPuE1HxjVMSvLVW9ocqUKLsCC5CXdbqCmblAshOMAS6/keqq/sMZMZ19scR4PsZChSR7A==" crossorigin="" />
+    <!-- Make sure you put this AFTER Leaflet's CSS -->
+    <script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js" integrity="sha512-XQoYMqMTK8LvdxXYG3nZ448hOEQiglfqkJs1NOQV44cWnUrBc8PkAOcXy20w0vlaXaVUearIOBhiXZ5V3ynxwA==" crossorigin=""></script>
+
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+
+    <title>Component map</title>
+  </head>
+
+  <body>
+    <!-- <div >
+        <nav class="c-topnav navbar navbar-expand-lg">
+                <div class="container">
+                        <a class="navbar-brand">
+                            <button class="c-topnav__button">
+                                Offerte
+                            </button>
+                        </a>
+                    <div class="justify-content-end">
+                    <ul class="navbar-nav">
+                        <li class="">
+                        <a class="" href="#">Features</a>
+                        </li>
+                        <li class="">
+                        <a class="" href="#">Pricing</a>
+                        </li>
+                    </ul>
+                    </div>
+                </div>
+        </nav>
+        <nav class="c-nav2 navbar navbar-expand-sm">
+                <div class="container">
+                        <a class="navbar-brand">
+                        <img class="c-nav2__logo" src="img/logo-klein.svg"  alt="logo-klein">
+                        </a>
+                    <div class="justify-content-end">
+                    <ul class="navbar-nav">
+                        <li class="">
+                        <a class="" href="/index.html#">Home</a>
+                        </li>
+                        <li class="c-nav2__dropdown">
+                            <a class="" href="#">Plaatsing</a>
+                            <div class="c-nav2__dropdown-content">
+                                <a class="c-nav2__dropdown-item" href="#"><img src="/img/plaatsing-logo.svg">Plaatsing</a>
+                                <a class="c-nav2__dropdown-item" href="#"><img src="/img/plaatsing-logo.svg">Residentie </a>
+                                <a class="c-nav2__dropdown-item" href="#"><img src="/img/plaatsing-logo.svg">Woning </a>
+                            </div>
+                        </li>
+                        <li class="">
+                            <a class="" href="#">Oplossingen</a>
+                        </li>
+                        <li class="">
+                            <a class="" href="#">Onderhoud</a>
+                        </li>
+                        <li class="">
+                            <a class="" href="#">Realisaties</a>
+                        </li>
+                        <li class="">
+                            <a class="" href="#">Contact</a>
+                        </li>
+                    </ul>
+                    </div>
+                </div>
+                </div>
+                <button class="navbar-toggler collapsed" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="navbar-collapse collapse" id="navbarSupportedContent">
+                    <ul class="list-group bg-primary d-block d-sm-none">
+                        <li class="list-unstyled border-0 p-2"> <a href="" class="text-dark"><i class="fa fa-chevron-right"> </i>   Product 1 </a></li>
+                        <li class="list-unstyled border-0 p-2"> <a href="" class="text-dark"><i class="fa fa-chevron-right"> </i>   Product 2 </a></li>
+                        <li class="list-unstyled border-0 p-2"> <a href="" class="text-dark"><i class="fa fa-chevron-right"> </i>   Product 3 </a></li>
+                        <li class="list-unstyled border-0 p-2"> <a href="" class="text-dark"><i class="fa fa-chevron-right"> </i>   Product 4 </a></li>
+                        <li class="list-unstyled border-0 p-2"> <a href="" class="text-dark"><i class="fa fa-chevron-right"> </i>   Product 5 </a></li>
+                        <li class="list-unstyled border-0 p-2"> <a href="" class="text-dark"><i class="fa fa-chevron-right"> </i>   Product 6 </a></li>
+                        <li class="list-unstyled border-0 p-2"> <a href="" class="text-dark"><i class="fa fa-chevron-right"> </i>   Product 7 </a></li>
+                    </ul>
+                </div>
+        </nav>
+    </div> -->
+
+    <!-- Let op!!! voor de map is er css en een script die boven ingeladen word -->
+    <div class="c-map">
+      <div class="container">
+        <h1>Hoe kan je ons vinden</h1>
+        <p class="p1">Klik op de kaart om je route te plannen</p>
+      </div>
+      <div id="mapid" class="c-map--content">
+        <script>
+          // inladen van de map
+          var mymap = L.map("mapid").setView([50.824109, 3.250233], 14);
+          L.tileLayer("https://api.maptiler.com/maps/streets/{z}/{x}/{y}.png?key=olLdYyDKGiTjCHzOeHhg", {
+            attribution: '<a href="https://www.maptiler.com/copyright/" target="_blank">&copy; MapTiler</a> <a href="https://www.openstreetmap.org/copyright" target="_blank">&copy; OpenStreetMap contributors</a>',
+            tileSize: 512,
+            zoomOffset: -1,
+          }).addTo(mymap);
+
+          // marker
+          //var marker = L.marker([50.824109, 3.250233]).addTo(mymap);
+
+          var markerHeating = L.icon({
+            iconUrl: "img/prop_marker_logo.svg",
+            shadowUrl: "img/prop_marker_shadow.svg",
+
+            iconSize: [100, 100], // size of the icon
+            shadowSize: [120, 120], // size of the shadow
+            iconAnchor: [2, 94], // point of the icon which will correspond to marker's location
+            shadowAnchor: [-18, 110], // the same for the shadow
+            popupAnchor: [50, -76], // point from which the popup should open relative to the iconAnchor
+          });
+
+          L.marker([50.824109, 3.250233], { icon: markerHeating }).addTo(mymap).bindPopup("Spring gerust binnen voor een koffie!");
+        </script>
+      </div>
+    </div>
+  </body>
+</html>

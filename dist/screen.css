@@ -7,7 +7,31 @@ html {
 h1 {
   font-family: bebas-kai, sans-serif;
   font-size: 4.5rem !important;
-  color: #23201E;
+  color: #2e2b28;
+}
+
+@media (max-width: 575.98px) {
+  h1 {
+    font-size: 2.8rem !important;
+  }
+}
+
+@media (max-width: 767.98px) {
+  h1 {
+    font-size: 3.2rem !important;
+  }
+}
+
+@media (max-width: 991.98px) {
+  h1 {
+    font-size: 3.8rem !important;
+  }
+}
+
+@media (max-width: 1199.98px) {
+  h1 {
+    font-size: 4rem !important;
+  }
 }
 
 h2 {
@@ -277,6 +301,73 @@ a:hover {
 @media (max-width: 767.98px) {
   .c-footer .o-copyright {
     margin-top: 11rem;
+  }
+}
+
+.c-map {
+  margin: 15rem 0;
+  text-align: center;
+}
+
+.c-map h1 {
+  font-size: 5.5rem !important;
+  margin-bottom: 2.4rem;
+}
+
+@media (max-width: 575.98px) {
+  .c-map h1 {
+    font-size: 2.8rem !important;
+  }
+}
+
+@media (max-width: 767.98px) {
+  .c-map h1 {
+    font-size: 3.2rem !important;
+  }
+}
+
+@media (max-width: 991.98px) {
+  .c-map h1 {
+    font-size: 3.8rem !important;
+  }
+}
+
+@media (max-width: 1199.98px) {
+  .c-map h1 {
+    font-size: 4rem !important;
+  }
+}
+
+.c-map--content {
+  margin: 4rem 0 15rem 0;
+}
+
+#mapid {
+  width: 100%;
+  height: 80rem;
+}
+
+@media (max-width: 575.98px) {
+  #mapid {
+    height: 40rem;
+  }
+}
+
+@media (max-width: 767.98px) {
+  #mapid {
+    height: 50rem;
+  }
+}
+
+@media (max-width: 991.98px) {
+  #mapid {
+    height: 60rem;
+  }
+}
+
+@media (max-width: 1199.98px) {
+  #mapid {
+    height: 70rem;
   }
 }
 
