@@ -1,0 +1,30 @@
+.c-realisaties {
+  h1 {
+    margin-bottom: $margin-h1-text;
+  }
+  &__filter {
+    display: flex;
+
+    h3 {
+      color: $color-greywhite;
+      font-size: 38px;
+      text-shadow: $text-shadow;
+      margin-right: 8.5rem;
+      position: relative;
+      hr {
+        border: 0;
+        border-top: 2.7rem solid $color-orange;
+        width: 0;
+        margin: 0;
+        transition: width 0.5s ease-out;
+        -webkit-transition: width 0.5s ease-out;
+        z-index: -1;
+        position: absolute;
+        bottom: 1rem;
+      }
+      &:hover hr {
+        width: calc(100% + 1.5rem);
+      }
+    }
+  }
+}
