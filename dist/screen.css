@@ -4,6 +4,10 @@ html {
   font-size: 62.5%;
 }
 
+main {
+  margin-top: 25rem;
+}
+
 h1 {
   font-family: bebas-kai, sans-serif;
   font-size: 4.5rem !important;
@@ -65,8 +69,13 @@ a:hover {
   font-family: bebas-kai, sans-serif;
 }
 
+.c-topnav .navbar-nav {
+  -webkit-box-orient: horizontal !important;
+  flex-direction: row !important;
+}
+
 .c-topnav li a {
-  margin-left: 7.5rem;
+  margin-left: 4.5rem;
   font-family: bebas-kai, sans-serif;
   font-size: 2rem;
   color: white;
@@ -131,8 +140,81 @@ a:hover {
   margin-right: 1.1rem;
 }
 
+.c-nav2__dropdown-small {
+  display: none;
+}
+
 .c-nav2 .c-nav2__dropdown:hover .c-nav2__dropdown-content {
   display: block;
+}
+
+.c-nav2 .menu {
+  font-size: 2.5em;
+  display: none;
+}
+
+@media (max-width: 1000px) {
+  .c-nav2 ul {
+    padding-top: 2rem;
+    align-items: center;
+    position: fixed;
+    top: 11.5rem;
+    height: 10rem;
+    right: -100%;
+    background: white;
+    width: 100%;
+    transition: right 0.5s linear;
+  }
+  .c-nav2 .menu {
+    display: block;
+    width: 100px;
+    text-align: right;
+  }
+  #chk1:checked ~ ul {
+    right: 0;
+  }
+}
+
+.c-nav2 input[type="checkbox"] {
+  display: none;
+}
+
+@media (max-width: 600px) {
+  .c-nav2 ul {
+    padding-right: 5rem;
+    position: fixed;
+    top: 11.5rem;
+    right: -100%;
+    background: white;
+    height: calc(100vh - 100px);
+    width: 50%;
+    flex-direction: column !important;
+    align-items: flex-end;
+    transition: right 0.5s linear;
+  }
+  .c-nav2__dropdown {
+    display: none;
+  }
+  .c-nav2__dropdown-small {
+    display: contents;
+    text-align: right;
+  }
+  .c-nav2__dropdown-small-item {
+    font-size: 1.4rem !important;
+    color: #c03218 !important;
+  }
+  .c-nav2 .menu {
+    display: block;
+    width: 100px;
+    text-align: center;
+  }
+  #chk1:checked ~ ul {
+    right: 0;
+  }
+}
+
+.c-nav2 input[type="checkbox"] {
+  display: none;
 }
 
 .c-footer {
