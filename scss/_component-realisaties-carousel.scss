@@ -1,0 +1,32 @@
+.c-realisaties {
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  background: linear-gradient(0deg, rgba(233, 78, 30, 0.65), rgba(233, 78, 30, 0.65)), url(../img/realisaties_bg.jpg);
+  height: 74.6rem;
+  margin: 0;
+
+  h2 {
+    color: $color-greywhite !important;
+    padding-top: 1.6rem;
+  }
+
+  &--title {
+    padding: 5.5rem 0 0 0;
+    display: flex;
+    margin-bottom: 4.8rem;
+
+    &__line {
+      border-left: 3px solid $color-greywhite;
+      height: 5.9rem;
+      padding-right: $spacing-line-text;
+    }
+  }
+
+  &--card {
+    width: 51rem;
+    height: 48.2rem;
+    background-color: $color-greywhite;
+    box-shadow: $realisaties-shadow;
+  }
+}
