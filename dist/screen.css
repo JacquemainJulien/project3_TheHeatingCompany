@@ -852,4 +852,64 @@ a:hover {
   }
 }
 
+.c-cta__titel {
+  color: #c03218;
+  margin-top: 4rem;
+  margin-bottom: 8rem;
+}
+
+.c-cta__ondertitel {
+  margin-bottom: 4rem;
+}
+
+.c-cta__icons {
+  display: flex;
+  justify-content: center;
+}
+
+.c-cta__icons p {
+  margin-top: 2.42rem;
+}
+
+@media (max-width: 767.98px) {
+  .c-cta__icons p:last-child {
+    margin-bottom: 5rem;
+  }
+}
+
+.c-cta__logo {
+  position: relative;
+  top: -5rem;
+}
+
+.c-cta__logo img {
+  opacity: 0.1;
+  width: 100%;
+  z-index: 0;
+}
+
+.c-cta__logo button {
+  z-index: 1;
+  position: absolute;
+  bottom: 15rem;
+}
+
+@media (max-width: 1199.98px) {
+  .c-cta__logo button {
+    bottom: 10.5rem;
+  }
+}
+
+@media (max-width: 991.98px) {
+  .c-cta__logo button {
+    bottom: 0rem;
+  }
+}
+
+@media (max-width: 767.98px) {
+  .c-cta__logo button {
+    bottom: 0rem;
+  }
+}
+
 /*# sourceMappingURL=screen.css.map */
