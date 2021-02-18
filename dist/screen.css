@@ -289,7 +289,7 @@ li a {
 
 @media (max-width: 575.98px) {
   .c-footer {
-    height: 132rem;
+    height: 140rem;
   }
 }
 
@@ -369,8 +369,8 @@ li a {
 
 .c-footer .c-input__group input {
   width: 25.8rem;
-  height: 5.1rem;
-  color: #f7f8f9;
+  height: 5.5rem;
+  color: #2e2b28;
   margin-right: 0.7rem;
   font-size: initial;
   padding-left: 1.5rem;
@@ -380,23 +380,6 @@ li a {
   font-family: bebas-kai, sans-serif;
   font-size: 2rem;
   color: #2e2b28;
-}
-
-.c-footer .c-input__group button {
-  padding: 0.4rem 3rem 0.5rem 3rem;
-  color: white;
-  background-color: #e94e1e;
-  border: 2px solid white;
-  font-family: bebas-kai, sans-serif;
-  font-size: 2rem;
-}
-
-.c-footer .c-input__group button:hover {
-  color: #e94e1e;
-  background-color: white;
-  border: 2px solid #e94e1e;
-  font-size: 2rem;
-  font-family: bebas-kai, sans-serif;
 }
 
 @media (max-width: 767.98px) {
@@ -413,6 +396,16 @@ li a {
   .c-footer .o-copyright {
     margin-top: 11rem;
   }
+}
+
+.c-btn__offerte-inner {
+  top: 0 !important;
+  left: 0 !important;
+}
+
+.c-btn__offerte-hover {
+  top: 0 !important;
+  left: 0 !important;
 }
 
 .c-container__cards {
@@ -998,6 +991,37 @@ li a {
 @media (max-width: 767.98px) {
   .c-cta__logo button {
     bottom: 0rem;
+  }
+}
+
+@media (min-width: 992px) {
+  .o-dropdownbtn {
+    bottom: 8rem;
+  }
+}
+
+.o-dropdownbtn a {
+  display: block;
+  width: 8rem !important;
+  height: 8rem !important;
+  border-radius: 50%;
+  background-color: #f7f8f9;
+  color: #e94e1e;
+  text-align: center;
+  box-shadow: 0px 1px 9px 1px #e94e1e;
+}
+
+.o-dropdownbtn a i {
+  padding-top: 1.2rem;
+  font-size: 6rem;
+}
+
+@media (max-width: 1199.98px) {
+  .o-dropdownbtn a {
+    width: 4rem;
+    height: 4rem;
+    line-height: 8.2rem;
+    font-size: 4rem;
   }
 }
 
