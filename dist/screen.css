@@ -726,6 +726,16 @@ a:hover {
   position: relative;
 }
 
+.c-container__cards--team .c-card--team .c-overlay__container {
+  width: 100%;
+  height: 100%;
+}
+
+.c-container__cards--team .c-card--team .c-overlay__container:hover {
+  display: none;
+  opacity: 0;
+}
+
 .c-container__cards--team .c-card--team .c-overlay {
   width: 25rem;
   height: 5rem;
@@ -751,6 +761,56 @@ a:hover {
 
 .c-container__cards--team .c-card--team .c-overlay__text p {
   color: #2e2b28;
+}
+
+.container-overlay:hover {
+  display: none;
+}
+
+.c-portfolio__item {
+  position: relative;
+  margin-bottom: 3rem;
+}
+
+.c-portfolio__item::before {
+  content: '';
+  width: 25.2rem;
+  height: 34.6rem;
+  position: absolute;
+  bottom: -7.5rem;
+  right: -9.7rem;
+  z-index: -1;
+}
+
+.c-portfolio__item:hover .c-portfolio__overlay {
+  opacity: 1;
+}
+
+.c-portfolio__img {
+  width: 100%;
+  height: auto;
+}
+
+.c-portfolio__overlay {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: left;
+  background-color: #f7f8f9;
+  color: #2e2b28;
+  padding: 3rem;
+  transition: all 0.3s ease-in;
+  align-items: flex-start;
+  position: absolute;
+  top: 0;
+  left: 0;
+  opacity: 0;
+  height: 100%;
+  background-color: rgba(247, 248, 249, 0.95);
+}
+
+.c-portfolio__overlay h2 {
+  color: #c03218;
 }
 
 .c-realisaties h1 {
