@@ -912,4 +912,35 @@ a:hover {
   }
 }
 
+@media (min-width: 992px) {
+  .o-dropdownbtn {
+    bottom: 8rem;
+  }
+}
+
+.o-dropdownbtn a {
+  display: block;
+  width: 8rem !important;
+  height: 8rem !important;
+  border-radius: 50%;
+  background-color: #f7f8f9;
+  color: #e94e1e;
+  text-align: center;
+  box-shadow: 0px 1px 9px 1px #e94e1e;
+}
+
+.o-dropdownbtn a i {
+  padding-top: 1.2rem;
+  font-size: 6rem;
+}
+
+@media (max-width: 1199.98px) {
+  .o-dropdownbtn a {
+    width: 4rem;
+    height: 4rem;
+    line-height: 8.2rem;
+    font-size: 4rem;
+  }
+}
+
 /*# sourceMappingURL=screen.css.map */
