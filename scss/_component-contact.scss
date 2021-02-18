@@ -1,0 +1,166 @@
+body{
+    background-color: $color-greywhite;
+    box-sizing: border-box;
+}
+
+.c-contact{
+    position: relative;
+    display: flex;
+    box-shadow: 2px 5px 10px 2px rgba($color-orange, 0.35);
+    &__container{
+        margin: $margin-block 0;
+    }
+    &__title{
+        border-left: 3px solid $color-orange;
+        margin-bottom: $margin-h1-text;
+    }
+    &__info{
+        margin-right:0.8rem;
+        display: flex;
+        flex-direction: column;
+        object-position: center;
+        justify-content: center;
+        padding-bottom: 4rem;
+        h2{
+            text-align: center;
+        }
+        &-icon{
+            height: 4rem;
+        }
+        &-a{
+            display: flex;
+            object-position: center;
+            align-items: center;
+            margin-top: $margin-h3 ;
+            a{
+                color:$color-orange;
+                margin: 0 $margin-h1-text;
+                i{
+                    font-size: 4rem;
+                }
+            }  
+        }
+        &-margin{
+            margin-bottom: $margin-h3;
+        }
+    }
+    &__form{
+        width: 100%;
+        padding: 10rem;
+       label{
+           display: block;
+           font-size: 2rem;
+           font-family: $bebas-kai;
+           color: $color-black;
+           margin-bottom: 2rem;
+           transition: all 0.4s ease;
+       } 
+       input{
+           width: 100%;
+           border: none;
+           border-bottom: 1px solid $color-black;
+           outline: none;
+           font-size: 1.6rem;
+           font-family: $Roboto-light;
+           &:focus{
+            box-shadow: 2px 5px 8px 0px rgba($color-orange, 0.35);
+            border-bottom: 1px solid $color-orange;
+           }
+       }
+       &-float{
+           float: left;
+           width: 50%;
+           padding: 2rem;
+       }
+       &-bericht{
+            float:left;
+            width: 100%;
+            padding: 2rem;
+            transition: all 0.4s ease;
+            outline: none;
+            &:focus{
+                label{
+                    color: $color-orange;
+                }
+            }
+            &:hover{
+                transition: all 0.4s ease;
+                label{
+                    color: $color-orange;
+                }
+                textarea{
+                    box-shadow: 2px 5px 8px 0px rgba($color-orange, 0.35);
+                }
+           }
+            textarea{
+               width: 100%;
+               height: 15rem;
+               border: none;
+               font-size: 1.6rem;
+               font-family: $Roboto-light;
+               box-shadow: 2px 5px 8px 0px rgba($color-black, 0.35);
+               &:focus{
+                box-shadow: 2px 5px 8px 0px rgba($color-orange, 0.35);
+                outline: none;
+                transition: all 0.4s ease;
+               }
+           }
+       }
+       &-check{
+           float: left;
+           width: 60%;
+           margin: 2rem 0;
+       }
+    } 
+}
+.c-checkbox{
+    padding: $margin-h3 2rem;
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    label{
+        font-size: 1.2rem;
+        font-family: $Roboto-light;
+        padding: 0 2rem;
+        margin-bottom: 0rem;
+    }
+    input[type="checkbox"]{
+        position: relative;
+        width: 2rem;
+        height: 2rem;
+        appearance: none;
+        -webkit-appearance: none;
+        background-color: $color-greywhite;
+        border: none;
+        border-bottom: 1px solid rgba($color-black, 0.35);
+        border-right: 1px solid rgba($color-black, 0.35);
+        outline: none;
+        transition: all 0.4s ease;
+        &:hover{
+            box-shadow: 2px 5px 8px 0px rgba($color-orange, 0.35);
+            border-right: orange 1px solid;
+            border-bottom: orange 1px solid;
+        }
+        &:checked{
+            transition: all 0.4s ease;
+            &::after{
+                position: absolute;
+                content: "\f00c";
+                font-family: "Font Awesome 5 Free";
+                color: $color-black;
+                font-weight: 600;
+                font-size: 1.3rem;
+                top:0rem;
+                left:0.3rem;
+                transition: all 0.4s ease;
+                box-shadow: none;
+            }
+        }
+    }
+}
+.c-contact__btn{
+    float: right;
+    margin: $margin-h3 0;
+    margin-right: 2rem;
+
+}

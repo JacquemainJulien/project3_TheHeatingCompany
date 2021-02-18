@@ -24,13 +24,13 @@ h3 {
 
 .p1 {
   font-family: "Roboto", sans-serif;
-  font-size: 2rem !important;
+  font-size: 2.4rem !important;
   color: #2e2b28;
 }
 
 .p2 {
   font-family: "Roboto", sans-serif;
-  font-size: 1.8rem !important;
+  font-size: 2rem !important;
   color: #2e2b28;
 }
 
@@ -354,7 +354,6 @@ a:hover {
   }
 }
 
-
 .c-btn__offerte {
   margin-right: 1.6rem;
   z-index: 1;
@@ -409,59 +408,6 @@ a:hover {
   transition: all 0.4s ease;
 }
 
-.c-btn__offerte {
-  margin-right: 1.6rem;
-  z-index: 1;
-  position: relative;
-  padding: 1.55rem 4rem;
-  padding-top: 1.65rem;
-  color: #f7f8f9;
-  font-family: bebas-kai, sans-serif;
-  font-size: 1.8rem;
-  background-color: transparent;
-  outline: none;
-  border: none;
-  transition: all 0.4s ease;
-}
-
-.c-btn__offerte:hover .c-btn__offerte-hover {
-  transform: translateX(0);
-}
-
-.c-btn__offerte:hover:before {
-  content: "";
-  z-index: 1;
-  position: absolute;
-  left: 0;
-  top: 0;
-  width: 100%;
-  height: 100%;
-  border: 2px solid #e94e1e;
-}
-
-.c-btn__offerte:before {
-  content: "";
-  z-index: 1;
-  position: absolute;
-  left: 0;
-  top: 0;
-  width: 100%;
-  height: 100%;
-  border: 2px solid #f7f8f9;
-}
-
-.c-btn__offerte:after {
-  content: "";
-  z-index: 2;
-  position: absolute;
-  left: 0;
-  top: 0;
-  width: 100%;
-  height: 100%;
-  transition: all 0.4s ease;
-}
-
-
 .c-btn__offerte:hover {
   color: #e94e1e;
 }
@@ -502,24 +448,14 @@ a:hover {
 }
 
 .c-btn__large {
-
   max-height: 6.9rem;
   width: 18.1rem;
-
-  padding: 2.1rem 5rem;
-  padding-top: 2.3rem;
-
   font-size: 3rem;
 }
 
 .c-btn__xlarge {
-
   max-height: 8.6rem;
   width: 23.1rem;
-
-  padding: 2.1rem 5rem;
-  padding-top: 2.3rem;
-
   font-size: 4.5rem;
 }
 
@@ -527,7 +463,6 @@ a:hover {
   background-color: #2e2b28;
   height: 10rem;
   padding: 5rem;
-
 }
 
 .c-btn {
@@ -670,7 +605,199 @@ a:hover {
   display: flex;
   flex-direction: row;
   justify-content: space-around;
+}
 
+body {
+  background-color: #f7f8f9;
+  box-sizing: border-box;
+}
+
+.c-contact {
+  position: relative;
+  display: flex;
+  box-shadow: 2px 5px 10px 2px rgba(233, 78, 30, 0.35);
+}
+
+.c-contact__container {
+  margin: 15rem 0;
+}
+
+.c-contact__title {
+  border-left: 3px solid #e94e1e;
+  margin-bottom: 4.8rem;
+}
+
+.c-contact__info {
+  margin-right: 0.8rem;
+  display: flex;
+  flex-direction: column;
+  object-position: center;
+  justify-content: center;
+  padding-bottom: 4rem;
+}
+
+.c-contact__info h2 {
+  text-align: center;
+}
+
+.c-contact__info-icon {
+  height: 4rem;
+}
+
+.c-contact__info-a {
+  display: flex;
+  object-position: center;
+  align-items: center;
+  margin-top: 4rem;
+}
+
+.c-contact__info-a a {
+  color: #e94e1e;
+  margin: 0 4.8rem;
+}
+
+.c-contact__info-a a i {
+  font-size: 4rem;
+}
+
+.c-contact__info-margin {
+  margin-bottom: 4rem;
+}
+
+.c-contact__form {
+  width: 100%;
+  padding: 10rem;
+}
+
+.c-contact__form label {
+  display: block;
+  font-size: 2rem;
+  font-family: bebas-kai, sans-serif;
+  color: #2e2b28;
+  margin-bottom: 2rem;
+  transition: all 0.4s ease;
+}
+
+.c-contact__form input {
+  width: 100%;
+  border: none;
+  border-bottom: 1px solid #2e2b28;
+  outline: none;
+  font-size: 1.6rem;
+  font-family: "Roboto", sans-serif;
+}
+
+.c-contact__form input:focus {
+  box-shadow: 2px 5px 8px 0px rgba(233, 78, 30, 0.35);
+  border-bottom: 1px solid #e94e1e;
+}
+
+.c-contact__form-float {
+  float: left;
+  width: 50%;
+  padding: 2rem;
+}
+
+.c-contact__form-bericht {
+  float: left;
+  width: 100%;
+  padding: 2rem;
+  transition: all 0.4s ease;
+  outline: none;
+}
+
+.c-contact__form-bericht:focus label {
+  color: #e94e1e;
+}
+
+.c-contact__form-bericht:hover {
+  transition: all 0.4s ease;
+}
+
+.c-contact__form-bericht:hover label {
+  color: #e94e1e;
+}
+
+.c-contact__form-bericht:hover textarea {
+  box-shadow: 2px 5px 8px 0px rgba(233, 78, 30, 0.35);
+}
+
+.c-contact__form-bericht textarea {
+  width: 100%;
+  height: 15rem;
+  border: none;
+  font-size: 1.6rem;
+  font-family: "Roboto", sans-serif;
+  box-shadow: 2px 5px 8px 0px rgba(46, 43, 40, 0.35);
+}
+
+.c-contact__form-bericht textarea:focus {
+  box-shadow: 2px 5px 8px 0px rgba(233, 78, 30, 0.35);
+  outline: none;
+  transition: all 0.4s ease;
+}
+
+.c-contact__form-check {
+  float: left;
+  width: 60%;
+  margin: 2rem 0;
+}
+
+.c-checkbox {
+  padding: 4rem 2rem;
+  display: flex;
+  justify-content: left;
+  align-items: center;
+}
+
+.c-checkbox label {
+  font-size: 1.2rem;
+  font-family: "Roboto", sans-serif;
+  padding: 0 2rem;
+  margin-bottom: 0rem;
+}
+
+.c-checkbox input[type="checkbox"] {
+  position: relative;
+  width: 2rem;
+  height: 2rem;
+  appearance: none;
+  -webkit-appearance: none;
+  background-color: #f7f8f9;
+  border: none;
+  border-bottom: 1px solid rgba(46, 43, 40, 0.35);
+  border-right: 1px solid rgba(46, 43, 40, 0.35);
+  outline: none;
+  transition: all 0.4s ease;
+}
+
+.c-checkbox input[type="checkbox"]:hover {
+  box-shadow: 2px 5px 8px 0px rgba(233, 78, 30, 0.35);
+  border-right: orange 1px solid;
+  border-bottom: orange 1px solid;
+}
+
+.c-checkbox input[type="checkbox"]:checked {
+  transition: all 0.4s ease;
+}
+
+.c-checkbox input[type="checkbox"]:checked::after {
+  position: absolute;
+  content: "\f00c";
+  font-family: "Font Awesome 5 Free";
+  color: #2e2b28;
+  font-weight: 600;
+  font-size: 1.3rem;
+  top: 0rem;
+  left: 0.3rem;
+  transition: all 0.4s ease;
+  box-shadow: none;
+}
+
+.c-contact__btn {
+  float: right;
+  margin: 4rem 0;
+  margin-right: 2rem;
 }
 
 /*# sourceMappingURL=screen.css.map */

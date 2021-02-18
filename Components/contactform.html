@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../dist/screen.css"/>
+    <link rel="stylesheet" href="../bootstrap-4.5.2/scss/bootstrap.css"/>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <script src="https://use.fontawesome.com/1a03d5e514.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css" integrity="sha512-+4zCK9k+qNFUR5X+cKL9EIR+ZOhtIloNl9GIKS57V1MyNsYpYcUrUeQc9vNfzsWfV28IaLL3i96P9sdNyeRssA==" crossorigin="anonymous" />
+    <title>Component-contactformulier</title>
+</head>
+<body>
+    <div class="container c-contact__container">
+        <div class="row">
+            <div class="col-lg-10 offset-lg-1 c-contact__title">
+                <h1>
+                    Contacteer ons
+                </h1> 
+                <p class="p2">We helpen je graag met al je wensen en vragen. Vul hieronder je bericht in en je krijgt antwoord binnen de 24 uur.</p>
+            </div>
+            <div class="col-lg-10 offset-lg-1 c-contact">
+                    <div class="c-contact__info">
+                        <h2>The Heating Company</h2>
+                        <div class="c-contact__info-a">
+                            <a href="#"><i class="fas fa-map-marker-alt"></i></a>
+                            <p class="p1">Industriestraat 15<br>
+                            8500 Kortrijk <br>
+                            België
+                            </p>
+                        </div>
+                        <div class="c-contact__info-a c-contact__info-margin">
+                            <a href="#"><i class="fas fa-phone-alt"></i></a>
+                            <p class="p1">+32 56 56 56 16
+                            </p>
+                        </div>
+                        <div class="c-contact__info-a">
+                            <a href="#"><i class="fas fa-envelope"></i></a>
+                            <p class="p1">info@theheatingcompany.be
+                            </p>
+                        </div>
+                    </div>
+                <div class="c-contact__form">
+                    
+                    <div class="c-contact__form-vnaam c-contact__form-float">
+                        <label for="vnaam">Voornaam:</label>
+                        <input type="text" name="input" id="vnaam">
+                    </div>
+                    <div class="c-contact__form-anaam c-contact__form-float">
+                        <label for="anaam">Naam:</label>
+                        <input type="text" name="input" id="anaam">
+                    </div>
+                    <div class="c-contact__form-email c-contact__form-float">
+                        <label for="email">Email:</label>
+                        <input type="email" name="input" id="email">
+                    </div>
+                    <div class="c-contact__form-tel c-contact__form-float">
+                        <label for="tel">Telefoon:</label>
+                        <input type="tel" name="input" id="tel">
+                    </div>
+                    <div class="c-contact__form-bericht">
+                        <label for="bericht">Bericht:</label>
+                        <textarea name="bericht" id="bericht"></textarea>
+                    </div>
+                    <div class="c-contact__form-check">
+                        <div class="c-checkbox">
+                            <input type="checkbox" id="urgent" name="urgent" value="urgent">
+                            <label for="urgent">Ik ga akoord met het privacy statement *</label>
+                        </div>
+                    </div>
+                    <div class="c-btn__center c-contact__btn">
+                        <button class="c-btn">
+                        <svg width="148px" height="55px" viewBox="0 0 148 55" class="c-btn__border">
+                            <polyline points="147,1 147,55 1,55 1,1 147,1" class="c-btn__bg-line" />
+                            <polyline points="147,1 147,55 1,55 1,1 147,1" class="c-btn__hl-line" />
+                        </svg>
+                        <span class="c-btn__txt">Verzenden</span>
+                        </button>
+                    </div>
+            
+                
+                </div>
+            </div>
+        </div>
+    </div>
+
+</body>
+</html>
