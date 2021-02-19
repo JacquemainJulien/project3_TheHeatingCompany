@@ -1432,10 +1432,12 @@ body {
   height: 100%;
 }
     
-    .c-cta__titel {
+.c-cta__titel {
   color: #c03218;
   margin-top: 4rem;
   margin-bottom: 8rem;
+}
+
 .c-contact__form-bericht {
   float: left;
   width: 100%;
@@ -1582,5 +1584,6 @@ body {
     margin: 0;
     margin-right: 2rem;
   }
+}
 
-/*# sourceMappingURL=screen.css.map */
+/* sourceMappingURL=screen.css.map */
