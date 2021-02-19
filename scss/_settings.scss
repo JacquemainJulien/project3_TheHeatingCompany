@@ -1,16 +1,16 @@
 @import url("https://use.typekit.net/kvz0hti.css");
-@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap");
 
-
-
-$color-red:#c03218;
+$color-red: #c03218;
 $color-orange: #e94e1e;
-$color-black:#2e2b28;
+$color-black: #2e2b28;
 $color-greywhite: #f7f8f9;
 
+$box-shadow: 2px 4px 6px $color-orange;
+$text-shadow: 2px 3px 3px $color-black;
 
 $bebas-kai: bebas-kai, sans-serif;
-$Roboto-light: 'Roboto', sans-serif;
+$Roboto-light: "Roboto", sans-serif;
 
 $margin-h1: 6.4rem;
 $margin-h1-text: 4.8rem;
@@ -23,7 +23,6 @@ $margin-p: 3.2rem;
 
 $margin-block: 15rem;
 
-
 $grid-breakpoints: (
   xxs: 0,
   xs: 430px,
@@ -31,7 +30,7 @@ $grid-breakpoints: (
   md: 768px,
   lg: 992px,
   xl: 1200px,
-  xxl: 1688px
+  xxl: 1688px,
 ) !default;
 
 $container-max-widths: (
@@ -40,5 +39,5 @@ $container-max-widths: (
   md: 720px,
   lg: 960px,
   xl: 1140px,
-  xxl: 1488px
+  xxl: 1488px,
 ) !default;

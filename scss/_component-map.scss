@@ -1,0 +1,44 @@
+.c-map {
+  margin: $margin-block 0;
+  text-align: center;
+
+  h1 {
+    font-size: 5.5rem !important;
+    margin-bottom: 2.4rem;
+
+    @include media-breakpoint-down(xs) {
+      font-size: 2.8rem !important;
+    }
+    @include media-breakpoint-down(sm) {
+      font-size: 3.2rem !important;
+    }
+    @include media-breakpoint-down(md) {
+      font-size: 3.8rem !important;
+    }
+    @include media-breakpoint-down(lg) {
+      font-size: 4rem !important;
+    }
+  }
+
+  &--content {
+    margin: 4rem 0 $margin-block 0;
+  }
+}
+
+#mapid {
+  width: 100%;
+  height: 80rem;
+
+  @include media-breakpoint-down(xs) {
+    height: 50rem;
+  }
+  @include media-breakpoint-up(sm) {
+    height: 60rem;
+  }
+  @include media-breakpoint-up(md) {
+    height: 65rem;
+  }
+  @include media-breakpoint-up(lg) {
+    height: 70rem;
+  }
+}

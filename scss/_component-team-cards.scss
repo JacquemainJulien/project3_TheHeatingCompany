@@ -1,0 +1,103 @@
+.c-container__cards--team {
+  display: flex;
+  margin: 5rem;
+  .c-card--team {
+    width: 45rem;
+    height: 56rem;
+    margin-bottom: 8rem;
+    margin-right: 5rem;
+    position: relative;
+
+    // @include media-breakpoint-down(1420px) {
+    //   width: 40rem;
+    //   height: 65rem;
+    // }
+    .c-overlay__container {
+      width: 100%;
+      height: 100%;
+      &:hover {
+        display: none;
+        opacity: 0;
+      }
+    }
+    .c-overlay {
+      width: 25rem;
+      height: 5rem;
+      background-color: #fff;
+      opacity: 0.5;
+      z-index: 1;
+      position: absolute;
+      bottom: 2.4rem;
+      right: 1.7rem;
+      &__text {
+        position: absolute;
+        bottom: 1.5rem;
+        left: 20rem;
+        z-index: 1;
+        h3 {
+          color: white;
+          line-height: 1rem;
+        }
+        p {
+          color: $color-black;
+        }
+      }
+    }
+  }
+}
+
+.container-overlay {
+  &:hover {
+    display: none;
+  }
+}
+
+.c-portfolio {
+  &__item {
+    position: relative;
+    margin-bottom: 3rem;
+
+    &::before {
+      content: '';
+      width: 25.2rem;
+      height: 34.6rem; 
+      position: absolute;
+      bottom: -7.5rem;
+      right: -9.7rem;
+      z-index: -1;
+    }
+
+    &:hover {
+      .c-portfolio__overlay {
+        opacity: 1;
+      }
+    }
+  }
+
+  &__img {
+    width: 100%;
+    height: auto;
+  } //end img
+
+  &__overlay {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: left;
+    background-color: $color-greywhite;
+    color: $color-black;
+    padding: 3rem;
+    transition: all 0.3s ease-in;
+    align-items: flex-start;
+
+    h2 {
+      color: $color-red;
+    }
+    position: absolute;
+    top: 0;
+    left: 0;
+    opacity: 0;
+    height: 100%;
+    background-color: rgba($color-greywhite, 0.95);
+  }
+}
