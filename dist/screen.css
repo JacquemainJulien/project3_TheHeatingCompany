@@ -865,6 +865,53 @@ a:hover {
   justify-content: center;
 }
 
+.c-realisaties--carousel__container {
+  margin-right: auto;
+  margin-left: auto;
+}
+
+@media (min-width: 800px) {
+  .c-realisaties--carousel__container {
+    max-width: 400px !important;
+  }
+}
+
+@media (min-width: 1100px) {
+  .c-realisaties--carousel__container {
+    max-width: 600px !important;
+  }
+}
+
+@media (min-width: 1300px) {
+  .c-realisaties--carousel__container {
+    max-width: 800px !important;
+  }
+}
+
+@media (min-width: 1530px) {
+  .c-realisaties--carousel__container {
+    max-width: 1200px !important;
+  }
+}
+
+@media (min-width: 1699px) {
+  .c-realisaties--carousel__container {
+    max-width: 1300px !important;
+  }
+}
+
+@media (min-width: 1700px) {
+  .c-realisaties--carousel__container {
+    max-width: 1400px !important;
+  }
+}
+
+@media (min-width: 1801px) {
+  .c-realisaties--carousel__container {
+    max-width: 1590px !important;
+  }
+}
+
 .c-realisaties--container {
   position: relative;
 }
@@ -891,18 +938,76 @@ a:hover {
 }
 
 .c-realisaties--card {
-  width: 51rem;
-  height: 48.2rem;
+  width: 51.1rem;
+  height: auto !important;
   background-color: #f7f8f9;
   box-shadow: 2px 4px 8px #2e2b28;
   text-align: center;
   margin: 0 3rem 0 0;
 }
 
-.c-realisaties--card img {
+@media (min-width: 800px) {
+  .c-realisaties--card {
+    width: 12rem !important;
+  }
+}
+
+@media (min-width: 1100px) {
+  .c-realisaties--card {
+    width: 16rem !important;
+  }
+}
+
+@media (min-width: 1300px) {
+  .c-realisaties--card {
+    width: 32rem !important;
+  }
+}
+
+@media (min-width: 1530px) {
+  .c-realisaties--card {
+    width: 38rem !important;
+  }
+}
+
+@media (max-width: 1699px) {
+  .c-realisaties--card {
+    width: 42rem !important;
+  }
+}
+
+@media (min-width: 1700px) {
+  .c-realisaties--card {
+    width: 48rem !important;
+  }
+}
+
+@media (min-width: 1801px) {
+  .c-realisaties--card {
+    width: 51.1rem !important;
+  }
+}
+
+.c-realisaties--card__picture {
   margin: 2.4rem 2.4rem 0 2.4rem;
-  width: 42.2rem;
-  height: 32rem;
+  width: 90%;
+}
+
+@media (max-width: 900px) {
+  .c-realisaties--card__picture {
+    width: 32rem !important;
+  }
+}
+
+@media (max-width: 800px) {
+  .c-realisaties--card__picture {
+    width: 15rem !important;
+  }
+}
+
+.c-realisaties--card__picture img {
+  max-width: 100%;
+  max-height: 100%;
 }
 
 .c-realisaties--card__textcontainer {

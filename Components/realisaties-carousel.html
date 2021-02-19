@@ -24,85 +24,66 @@
           <div class="c-realisaties--title__line"></div>
           <h2 class="c-realisaties--title__text">Realisaties</h2>
         </div>
-
-        <!-- <div class="c-realisaties--cards multiple-items">
-          <div class="c-realisaties--card">
-            <img src="../img/realisaties_brouwerij.jpg" alt="" />
-            <div class="c-realisaties--card__textcontainer">
-              <h2 class="c-realisaties--card__text">Brouwerij Kortrijk</h2>
-            </div>
-          </div>
-          <div class="c-realisaties--card">
-            <img src="../img/realisaties_brouwerij.jpg" alt="" />
-            <div class="c-realisaties--card__textcontainer">
-              <h2 class="c-realisaties--card__text">Brouwerij Kortrijk</h2>
-            </div>
-          </div>
-          <div class="c-realisaties--card">
-            <img src="../img/realisaties_brouwerij.jpg" alt="" />
-            <div class="c-realisaties--card__textcontainer">
-              <h2 class="c-realisaties--card__text">Brouwerij Kortrijk</h2>
-            </div>
-          </div>
-          <div class="c-realisaties--card">
-            <img src="../img/realisaties_brouwerij.jpg" alt="" />
-            <div class="c-realisaties--card__textcontainer">
-              <h2 class="c-realisaties--card__text">Brouwerij Kortrijk</h2>
-            </div>
-          </div>
-          <div class="c-realisaties--card">
-            <img src="../img/realisaties_brouwerij.jpg" alt="" />
-            <div class="c-realisaties--card__textcontainer">
-              <h2 class="c-realisaties--card__text">Brouwerij Kortrijk</h2>
-            </div>
-          </div>
-          <div class="c-realisaties--card">
-            <img src="../img/realisaties_brouwerij.jpg" alt="" />
-            <div class="c-realisaties--card__textcontainer">
-              <h2 class="c-realisaties--card__text">Brouwerij Kortrijk</h2>
-            </div>
-          </div>
-        </div> -->
-        <div class="container">
+        <div class="container c-realisaties--carousel__container" style="padding: 0;">
           <div class="c-realisaties--cards multiple-items">
             <div class="c-realisaties--card">
+              <div class="c-realisaties--card__picture">
               <img src="../img/realisaties_brouwerij.jpg" alt="" />
+            </div>
               <div class="c-realisaties--card__textcontainer">
                 <h2 class="c-realisaties--card__text">Brouwerij Kortrijk</h2>
               </div>
             </div>
+
             <div class="c-realisaties--card">
+              <div class="c-realisaties--card__picture">
               <img src="../img/realisaties_brouwerij.jpg" alt="" />
+            </div>
               <div class="c-realisaties--card__textcontainer">
                 <h2 class="c-realisaties--card__text">Brouwerij Kortrijk</h2>
               </div>
             </div>
+
             <div class="c-realisaties--card">
+              <div class="c-realisaties--card__picture">
               <img src="../img/realisaties_brouwerij.jpg" alt="" />
+            </div>
               <div class="c-realisaties--card__textcontainer">
                 <h2 class="c-realisaties--card__text">Brouwerij Kortrijk</h2>
               </div>
             </div>
+
             <div class="c-realisaties--card">
+              <div class="c-realisaties--card__picture">
               <img src="../img/realisaties_brouwerij.jpg" alt="" />
+            </div>
               <div class="c-realisaties--card__textcontainer">
                 <h2 class="c-realisaties--card__text">Brouwerij Kortrijk</h2>
               </div>
             </div>
+
             <div class="c-realisaties--card">
+              <div class="c-realisaties--card__picture">
               <img src="../img/realisaties_brouwerij.jpg" alt="" />
+            </div>
               <div class="c-realisaties--card__textcontainer">
                 <h2 class="c-realisaties--card__text">Brouwerij Kortrijk</h2>
               </div>
             </div>
+
             <div class="c-realisaties--card">
+              <div class="c-realisaties--card__picture">
               <img src="../img/realisaties_brouwerij.jpg" alt="" />
+            </div>
               <div class="c-realisaties--card__textcontainer">
                 <h2 class="c-realisaties--card__text">Brouwerij Kortrijk</h2>
               </div>
             </div>
+
             <div class="c-realisaties--card">
+              <div class="c-realisaties--card__picture">
               <img src="../img/realisaties_brouwerij.jpg" alt="" />
+            </div>
               <div class="c-realisaties--card__textcontainer">
                 <h2 class="c-realisaties--card__text">Brouwerij Kortrijk</h2>
               </div>
@@ -131,7 +112,7 @@
         pauseOnFocus:   false,
         pauseOnHover:   false,
         slidesToShow:   3,
-        slidesToScroll: 3,
+        slidesToScroll: 2,
         slidesPerRow: 3,
         zIndex: 1000,
         variableWidth: true,
@@ -139,20 +120,24 @@
       nextArrow: $('.c-realisaties--btn__right'),
       responsive: [
     {
-      breakpoint: 1300,
+      breakpoint: 1100,
       settings: {
         slidesToShow: 2,
         slidesToScroll: 2,
-        infinite: true,
-        dots: true
+        infinite: true
       }
     },
     {
-      breakpoint: 600,
+      breakpoint: 900,
       settings: {
         slidesToShow: 1,
         slidesToScroll: 1
-      }
+      },
+    },
+
+    {
+      breakpoint: 800,
+      settings: "unslick"
     }
     // You can unslick at a given breakpoint now by adding:
     // settings: "unslick"
