@@ -45,12 +45,24 @@ body{
             object-position: center;
             align-items: center;
             margin-top: $margin-h3 ;
+            &:hover{
+                a{
+                    color: $color-black;
+                }
+                .c-contact__info-href{
+                    a{
+                        text-decoration: none;
+                        border-bottom: $color-black 1px solid;
+                    }
+                }
+            }
             @include media-breakpoint-down(md){
                 margin-top: 2rem;
             }
             a{
                 color:$color-orange;
                 margin: 0 $margin-h1-text;
+                transition: all 0.4s ease;
                 i{
                     font-size: 4rem;
                     @include media-breakpoint-down(md){
@@ -72,6 +84,11 @@ body{
             margin-bottom: $margin-h3;
             @include media-breakpoint-down(lg){
                 margin-bottom: 0;
+            }
+        }
+        &-href{
+            a{
+                color: $color-black;
             }
         }
     }
@@ -120,6 +137,7 @@ body{
            outline: none;
            font-size: 1.6rem;
            font-family: $Roboto-light;
+           transition: all 0.4s ease;
            &:focus{
             box-shadow: 2px 5px 8px 0px rgba($color-orange, 0.35);
             border-bottom: 1px solid $color-orange;
