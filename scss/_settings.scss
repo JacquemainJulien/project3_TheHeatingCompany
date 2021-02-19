@@ -29,7 +29,8 @@ $margin-block: 15rem;
 $spacing-line-text: 2rem;
 
 $grid-breakpoints: (
-  xs: 0,
+  xxs: 0,
+  xs: 430px,
   sm: 576px,
   md: 768px,
   lg: 992px,
@@ -38,6 +39,7 @@ $grid-breakpoints: (
 ) !default;
 
 $container-max-widths: (
+  xs: 430px,
   sm: 540px,
   md: 720px,
   lg: 960px,
