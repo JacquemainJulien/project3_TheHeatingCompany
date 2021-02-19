@@ -1,5 +1,6 @@
 @import url("https://use.typekit.net/kvz0hti.css");
 @import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=La+Belle+Aurore&display=swap");
 
 $color-red: #c03218;
 $color-orange: #e94e1e;
@@ -8,9 +9,11 @@ $color-greywhite: #f7f8f9;
 
 $box-shadow: 2px 4px 6px $color-orange;
 $text-shadow: 2px 3px 3px $color-black;
+$realisaties-shadow: 2px 4px 8px $color-black;
 
 $bebas-kai: bebas-kai, sans-serif;
 $Roboto-light: "Roboto", sans-serif;
+$handwritten: "La Belle Aurore", cursive;
 
 $margin-h1: 6.4rem;
 $margin-h1-text: 4.8rem;
@@ -22,6 +25,8 @@ $margin-top-p: 4rem;
 $margin-p: 3.2rem;
 
 $margin-block: 15rem;
+
+$spacing-line-text: 2rem;
 
 $grid-breakpoints: (
   xxs: 0,
