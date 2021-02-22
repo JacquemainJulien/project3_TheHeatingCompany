@@ -1239,6 +1239,256 @@ body {
   }
 }
 
+.c-contact__form-bericht {
+  float: left;
+  width: 100%;
+  padding: 2rem;
+  transition: all 0.4s ease;
+  outline: none;
+}
+
+@media (max-width: 1199.98px) {
+  .c-contact__form-bericht {
+    padding-bottom: 0;
+  }
+}
+
+@media (max-width: 575.98px) {
+  .c-contact__form-bericht {
+    padding: 1rem;
+    padding-bottom: 0;
+  }
+}
+
+.c-contact__form-bericht:focus label {
+  color: #e94e1e;
+}
+
+.c-contact__form-bericht:hover {
+  transition: all 0.4s ease;
+}
+
+.c-contact__form-bericht:hover label {
+  color: #e94e1e;
+}
+
+.c-contact__form-bericht:hover textarea {
+  box-shadow: 2px 5px 8px 0px rgba(233, 78, 30, 0.35);
+}
+
+.c-contact__form-bericht textarea {
+  width: 100%;
+  height: 15rem;
+  border: none;
+  font-size: 1.6rem;
+  font-family: "Roboto", sans-serif;
+  box-shadow: 2px 5px 8px 0px rgba(46, 43, 40, 0.35);
+}
+
+.c-contact__form-bericht textarea:focus {
+  box-shadow: 2px 5px 8px 0px rgba(233, 78, 30, 0.35);
+  outline: none;
+  transition: all 0.4s ease;
+}
+
+.c-contact__form-check {
+  float: left;
+  width: 60%;
+  margin: 2rem 0;
+}
+
+@media (max-width: 1199.98px) {
+  .c-contact__form-check {
+    width: 100%;
+  }
+}
+
+@media (max-width: 575.98px) {
+  .c-contact__form-check {
+    margin: 1rem 0;
+    margin-bottom: 2rem;
+  }
+}
+
+.c-checkbox {
+  padding: 4rem 2rem;
+  display: flex;
+  justify-content: left;
+  align-items: center;
+}
+
+@media (max-width: 1199.98px) {
+  .c-checkbox {
+    padding: 0 2rem;
+  }
+}
+
+.c-checkbox label {
+  font-size: 1.2rem;
+  font-family: "Roboto", sans-serif;
+  padding: 0 2rem;
+  margin-bottom: 0rem;
+}
+
+@media (max-width: 575.98px) {
+  .c-checkbox label {
+    font-size: 0.8rem;
+  }
+}
+
+.c-checkbox input[type="checkbox"] {
+  position: relative;
+  width: 2rem;
+  height: 2rem;
+  appearance: none;
+  -webkit-appearance: none;
+  background-color: #f7f8f9;
+  border: none;
+  border-bottom: 1px solid rgba(46, 43, 40, 0.35);
+  border-right: 1px solid rgba(46, 43, 40, 0.35);
+  outline: none;
+  transition: all 0.4s ease;
+}
+
+.c-checkbox input[type="checkbox"]:hover {
+  box-shadow: 2px 5px 8px 0px rgba(233, 78, 30, 0.35);
+  border-right: orange 1px solid;
+  border-bottom: orange 1px solid;
+  cursor: pointer;
+}
+
+.c-checkbox input[type="checkbox"]:checked {
+  transition: all 0.4s ease;
+}
+
+.c-checkbox input[type="checkbox"]:checked::after {
+  position: absolute;
+  content: "\f00c";
+  font-family: "Font Awesome 5 Free";
+  color: #2e2b28;
+  font-weight: 600;
+  font-size: 1.3rem;
+  top: 0rem;
+  left: 0.3rem;
+  transition: all 0.4s ease;
+  box-shadow: none;
+}
+
+.c-contact__btn {
+  float: right;
+  margin: 4rem 0;
+  margin-right: 2rem;
+}
+
+@media (max-width: 1199.98px) {
+  .c-contact__btn {
+    margin: 0;
+    margin-right: 2rem;
+  }
+}
+
+.c-container__homecard {
+  margin-top: 15rem;
+}
+
+.c-homecard__card {
+  width: 80%;
+  height: 42rem;
+  box-shadow: 2px 4px 6px #e94e1e;
+  transition: all 0.4s ease;
+}
+
+@media (min-width: 768px) and (max-width: 991.98px) {
+  .c-homecard__card {
+    width: 100%;
+    height: 100%;
+  }
+}
+
+@media (min-width: 992px) and (max-width: 1199.98px) {
+  .c-homecard__card {
+    width: 100%;
+  }
+}
+
+@media (max-width: 767.98px) {
+  .c-homecard__card {
+    margin: 2rem 4rem;
+    height: 85%;
+  }
+}
+
+.c-homecard__card:hover {
+  box-shadow: 2px 4px 6px #2e2b28;
+}
+
+.c-homecard__content {
+  padding: 6.4rem 4rem;
+  position: relative;
+  transition: all 0.4s ease;
+  /*         img{
+            height: auto;
+            width: 50%;
+            margin-bottom: $margin-h3;
+            position: relative;
+            display: inline-block;
+        } */
+}
+
+@media (min-width: 768px) and (max-width: 991.98px) {
+  .c-homecard__content h3 {
+    font-size: 2.4rem !important;
+  }
+  .c-homecard__content p {
+    font-size: 1.6rem !important;
+  }
+}
+
+@media (max-width: 767.98px) {
+  .c-homecard__content {
+    padding: 3.2rem 2rem;
+  }
+}
+
+.c-homecard__content:hover {
+  cursor: pointer;
+}
+
+.c-homecard__content:hover h3::after {
+  background-color: #2e2b28;
+}
+
+.c-homecard__content h3 {
+  color: #f7f8f9;
+  text-shadow: 1px 2px 1px rgba(46, 43, 40, 0.35);
+  border: none;
+  position: relative;
+}
+
+.c-homecard__content h3::after {
+  transition: all 0.4s ease;
+  content: "";
+  position: absolute;
+  width: 55%;
+  height: 2.5rem;
+  background-color: #e94e1e;
+  border: none;
+  top: 6px;
+  left: 0;
+  z-index: -1;
+}
+
+@media (min-width: 768px) and (max-width: 1199.98px) {
+  .c-homecard__content h3::after {
+    width: 100%;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 991.98px) {
+  .c-homecard__content h3::after {
+    height: 2rem;
+  }
+
 .c-realisaties {
   background-size: contain;
   background-repeat: no-repeat;
@@ -1503,6 +1753,55 @@ body {
 }
 
 @media (max-width: 575.98px) {
+  .c-homecard__content h3::after {
+    width: 100%;
+  }
+}
+
+.c-homecard__content p {
+  font-size: 2rem;
+  font-family: "Roboto", sans-serif;
+}
+
+@media (max-width: 767.98px) {
+  .c-homecard__content p {
+    font-size: 1.6rem;
+  }
+}
+
+.c-homecard__icon {
+  height: 190px;
+  width: 100%;
+  position: relative;
+}
+
+.c-homecard__icon img {
+  height: 100%;
+  padding-bottom: 4rem;
+}
+
+.c-homecard__icon .c-homecard__icon2 {
+  position: absolute;
+  top: 0;
+  left: 0;
+  opacity: 0;
+  transition: all 0.4s ease;
+}
+
+@media (min-width: 768px) and (max-width: 991.98px) {
+  .c-homecard__icon {
+    height: 13rem;
+  }
+  .c-homecard__icon img {
+    width: 70%;
+    height: auto;
+  }
+}
+
+@media (max-width: 767.98px) {
+  .c-homecard__icon {
+    height: 13rem; 
+  }
   .c-contact__form-check {
     margin: 1rem 0;
     margin-bottom: 2rem;
@@ -1583,6 +1882,7 @@ body {
   .c-contact__btn {
     margin: 0;
     margin-right: 2rem;
+
   }
 }
 
