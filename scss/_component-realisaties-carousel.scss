@@ -1,0 +1,162 @@
+.c-realisaties {
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  background: linear-gradient(0deg, rgba(233, 78, 30, 0.65), rgba(233, 78, 30, 0.65)), url(../img/realisaties_bg.jpg);
+  height: 74.6rem;
+  margin: 0;
+  display: flex;
+  justify-content: center;
+
+  &--carousel__container {
+    margin-right: auto;
+    margin-left: auto;
+
+    @media (min-width: 800px) {
+      max-width: 400px !important;
+    }
+
+    @media (min-width: 1100px) {
+      max-width: 600px !important;
+    }
+
+    @media (min-width: 1300px) {
+      max-width: 800px !important;
+    }
+
+    @media (min-width: 1530px) {
+      max-width: 1200px !important;
+    }
+
+    @media (min-width: 1699px) {
+      max-width: 1300px !important;
+    }
+
+    @media (min-width: 1700px) {
+      max-width: 1400px !important;
+    }
+
+    @media (min-width: 1801px) {
+      max-width: 1590px !important;
+    }
+  }
+
+  &--container {
+    position: relative;
+  }
+
+  &--title {
+    padding: 5.5rem 0 0 0;
+    display: flex;
+    margin-bottom: 4.8rem;
+
+    &__line {
+      border-left: 3px solid $color-greywhite;
+      height: 5.9rem;
+      padding-right: $spacing-line-text;
+    }
+
+    &__text {
+      color: $color-greywhite !important;
+      padding-top: 1.6rem;
+    }
+  }
+
+  &--cards {
+    display: flex;
+  }
+
+  &--card {
+    width: 51.1rem;
+    height: auto !important;
+    background-color: $color-greywhite;
+    box-shadow: $realisaties-shadow;
+    text-align: center;
+    margin: 0 3rem 0 0;
+
+    // X-Small devices (portrait phones, less than 576px)
+    // No media query for `xs` since this is the default in Bootstrap
+
+    @media (min-width: 800px) {
+      width: 12rem !important;
+    }
+
+    @media (min-width: 1100px) {
+      width: 16rem !important;
+    }
+
+    @media (min-width: 1300px) {
+      width: 32rem !important;
+    }
+
+    @media (min-width: 1530px) {
+      width: 38rem !important;
+    }
+
+    @media (max-width: 1699px) {
+      width: 42rem !important;
+    }
+
+    @media (min-width: 1700px) {
+      width: 48rem !important;
+    }
+
+    @media (min-width: 1801px) {
+      width: 51.1rem !important;
+    }
+
+    &__picture {
+      margin: 2.4rem 2.4rem 0 2.4rem;
+      width: 90%;
+
+      @media (max-width: 900px) {
+        width: 32rem !important;
+      }
+
+      @media (max-width: 800px) {
+        width: 15rem !important;
+      }
+
+      img {
+        max-width: 100%;
+        max-height: 100%;
+      }
+    }
+
+    &__textcontainer {
+      width: 51.1rem;
+      height: 13.2rem;
+      display: table-cell;
+      vertical-align: middle;
+    }
+    &__text {
+      font-family: "La Belle Aurore", cursive;
+    }
+  }
+
+  &--btn {
+    width: 4.6rem;
+    height: 4.6rem;
+    border: 3px solid $color-greywhite;
+    background-color: $color-orange;
+    border-radius: 50%;
+    position: absolute;
+    top: calc(74.6rem / 2);
+    text-align: center;
+
+    &__left {
+      left: -8rem;
+    }
+
+    &__right {
+      right: -8rem;
+    }
+
+    svg {
+      width: 1.6rem;
+      color: white;
+      margin: auto;
+      height: 100%;
+    }
+  }
+}

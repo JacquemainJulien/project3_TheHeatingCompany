@@ -1,0 +1,30 @@
+.o-dropdownbtn{
+
+    @include media-breakpoint-up(lg){
+        bottom: 8rem;
+    }
+
+    a{
+        display: block;
+        width: 8rem!important;
+        height: 8rem!important;
+        
+        border-radius: 50%;
+        background-color: $color-greywhite;
+        color: $color-orange;
+        text-align: center;
+        box-shadow: 0px 1px 9px 1px #e94e1e;
+        i{
+            padding-top: 1.2rem;
+            font-size: 6rem;
+        }
+
+        @include media-breakpoint-down(lg){
+            width: 4rem;
+            height: 4rem;
+            line-height: 8.2rem;
+            font-size: 4rem;
+        }
+
+    }
+}
