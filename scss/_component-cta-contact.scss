@@ -10,8 +10,28 @@
   &__icons {
     display: flex;
     justify-content: center;
+    a{
+      text-decoration: none;
+      transition: all 0.4s ease;
+      &:hover{
+        p{
+          color: $color-orange;
+        }
+      }
+    }
+    img{
+      transition: all 0.4s ease;
+      @include media-breakpoint-down(md){
+        height: 3rem;
+      }
+    }
     p {
       margin-top: 2.42rem;
+      transition: all 0.4s ease;
+      @include media-breakpoint-down(md){
+        font-size: 1.6rem!important;
+        margin-top: 1.6rem;
+      }
     }
     p:last-child {
       @include media-breakpoint-down(sm) {
@@ -35,7 +55,7 @@
         bottom: 10.5rem;
       }
       @include media-breakpoint-down(md) {
-        bottom: 0rem;
+        bottom: 8rem;
       }
       @include media-breakpoint-down(sm) {
         bottom: 0rem;

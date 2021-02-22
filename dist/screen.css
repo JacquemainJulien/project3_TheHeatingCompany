@@ -951,8 +951,35 @@ li a {
   justify-content: center;
 }
 
+.c-cta__icons a {
+  text-decoration: none;
+  transition: all 0.4s ease;
+}
+
+.c-cta__icons a:hover p {
+  color: #e94e1e;
+}
+
+.c-cta__icons img {
+  transition: all 0.4s ease;
+}
+
+@media (max-width: 991.98px) {
+  .c-cta__icons img {
+    height: 3rem;
+  }
+}
+
 .c-cta__icons p {
   margin-top: 2.42rem;
+  transition: all 0.4s ease;
+}
+
+@media (max-width: 991.98px) {
+  .c-cta__icons p {
+    font-size: 1.6rem !important;
+    margin-top: 1.6rem;
+  }
 }
 
 @media (max-width: 767.98px) {
@@ -986,7 +1013,7 @@ li a {
 
 @media (max-width: 991.98px) {
   .c-cta__logo button {
-    bottom: 0rem;
+    bottom: 8rem;
   }
 }
 
