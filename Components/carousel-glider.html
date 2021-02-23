@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <link rel="stylesheet" href="../dist/glider.css">
+    <link rel="stylesheet" href="../dist/screen.css"/>
+   <link rel="stylesheet" href="bootstrap-4.5.2/scss/bootstrap.css"/> 
+   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css" integrity="sha512-+4zCK9k+qNFUR5X+cKL9EIR+ZOhtIloNl9GIKS57V1MyNsYpYcUrUeQc9vNfzsWfV28IaLL3i96P9sdNyeRssA==" crossorigin="anonymous" />
+    <title>Component-carousel-glider</title>
+</head>
+<body>
+        <div class="c-car">
+
+            <div class="c-car__container">
+                <div class="c-car__div">
+                    <h3>De Vaillant ketels</h3>
+                    <img src="../img/Vaillant_Logo.png" alt="">
+                    <hr>
+                    <p>Dit merk, dat in 1874 opgericht werd in Duitsland, is sinds 1948 op de Belgische markt. Het is een van de marktleiders op het vlak van verwarmingstechnologie. Vaillant heeft een uitgebreid productgamma. Twee van hun expertisecentra zijn in België gevestigd.</p>
+                </div>
+                <div class="c-car__div">
+                    <h3>De Viessmann ketels</h3>
+                    <img src="../img/Viessmann_Logo.png" alt="">
+                    <hr>
+                    <p>Dit merk, dat in 1874 opgericht werd in Duitsland, is sinds 1948 op de Belgische markt. Het is een van de marktleiders op het vlak van verwarmingstechnologie. Vaillant heeft een uitgebreid productgamma. Twee van hun expertisecentra zijn in België gevestigd.</p>
+                </div>
+                <div class="c-car__div">
+                    <h3>De Bosch ketels</h3>
+                    <img src="../img/Bosch-Logo.png" alt="">
+                    <hr>
+                    <p>Dit merk, dat in 1874 opgericht werd in Duitsland, is sinds 1948 op de Belgische markt. Het is een van de marktleiders op het vlak van verwarmingstechnologie. Vaillant heeft een uitgebreid productgamma. Twee van hun expertisecentra zijn in België gevestigd.</p>
+                </div>
+                <div class="c-car__div">
+                    <h3>De Vaillant ketels</h3>
+                    <img src="../img/Vaillant_Logo.png" alt="">
+                    <hr>
+                    <p>Dit merk, dat in 1874 opgericht werd in Duitsland, is sinds 1948 op de Belgische markt. Het is een van de marktleiders op het vlak van verwarmingstechnologie. Vaillant heeft een uitgebreid productgamma. Twee van hun expertisecentra zijn in België gevestigd.</p>
+                </div>
+                <div class="c-car__div">
+                    <h3>De Vaillant ketels</h3>
+                    <img src="../img/Vaillant_Logo.png" alt="">
+                    <hr>
+                    <p>Dit merk, dat in 1874 opgericht werd in Duitsland, is sinds 1948 op de Belgische markt. Het is een van de marktleiders op het vlak van verwarmingstechnologie. Vaillant heeft een uitgebreid productgamma. Twee van hun expertisecentra zijn in België gevestigd.</p>
+                </div>
+                <div class="c-car__div">
+                    <h3>De Vaillant ketels</h3>
+                    <img src="../img/Vaillant_Logo.png" alt="">
+                    <hr>
+                    <p>Dit merk, dat in 1874 opgericht werd in Duitsland, is sinds 1948 op de Belgische markt. Het is een van de marktleiders op het vlak van verwarmingstechnologie. Vaillant heeft een uitgebreid productgamma. Twee van hun expertisecentra zijn in België gevestigd.</p>
+                </div>
+            </div>
+            <div class="c-car__dots dots">
+                <div class="c-car__dot">
+    
+                </div>
+                <div class="c-car__dot">
+                    
+                </div>
+                <div class="c-car__dot">
+                    
+                </div>
+            </div>
+        </div>
+
+
+    <script src="../js/glider.js"></script>
+    <script src="../js/glider.min.js"></script>
+    <script>
+        new Glider(document.querySelector('.c-car__container'), {
+            slidesToShow: 1.5,
+            slidesToScroll: 0.5,
+            draggable: true,
+            duration: 0.8,
+            dots: '.dots',
+/*             arrows: {
+            prev: '.c-carousel__prev',
+            next: '.c-carousel__next'
+            }, */
+            responsive: [{
+                breakpoint: 576,
+                settings:{
+                    slidesToShow: 2,
+                    slidesToScroll: 1,
+                    /* itemWidth: 150, */
+                    duration: 0.8
+                }
+                },{
+                    breakpoint: 1140,
+                settings:{
+                    slidesToShow: 2.8,
+                    slidesToScroll: 1,
+                    /* itemWidth: 150, */
+                    duration: 0.8
+                    }
+                }
+            ]  
+        });
+      </script>
+</body>
+</html>
