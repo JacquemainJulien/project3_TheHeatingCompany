@@ -1,0 +1,165 @@
+.c-car {
+  position: relative;
+  box-sizing: border-box;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  background: linear-gradient(
+      0deg,
+      rgba(233, 78, 30, 0.65),
+      rgba(233, 78, 30, 0.65)
+    ),
+    url(../img/buizen.jpg);
+  height: 77vh;
+  width: 100vw;
+  /*    &__bg{
+        width: 100%;
+        height: 100%;
+         position: relative;
+        img{
+            position: absolute;
+            z-index: -100;
+        } 
+    }*/
+  @include media-breakpoint-between(lg, xl) {
+    height: 66rem;
+  }
+  @include media-breakpoint-down(md) {
+    height: 60rem;
+  }
+  &__container {
+    display: flex;
+    flex-direction: row;
+    padding: 10rem 10%;
+    padding-bottom: 0;
+    height: 70rem;
+    @include media-breakpoint-down(md) {
+      height: 55rem;
+    }
+  }
+  &__div {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 46vh !important;
+    /* width: 65rem!important; */
+    margin: 0 6.2rem;
+    background-color: rgba($color-greywhite, 0.75);
+    h3 {
+      margin: 2rem;
+    }
+    img {
+      align-self: center;
+      width: 75%;
+      max-height: 55%;
+    }
+    hr {
+      background-color: $color-orange;
+      color: $color-orange;
+      box-shadow: none;
+      text-shadow: none;
+      height: 1px;
+      width: 100%;
+      border-style: none;
+    }
+    p {
+      /* border-top: 1px solid  $color-orange;*/
+      margin: 5%;
+      font-family: $Roboto-light;
+      font-size: 1.6rem;
+      margin-top: 0;
+      @include media-breakpoint-up(xl) {
+        font-size: 1.8rem;
+      }
+      @include media-breakpoint-down(md) {
+        font-size: 1.4rem;
+      }
+    }
+    @include media-breakpoint-down(xl) {
+      margin: 0 2.8rem;
+      height: 42rem !important;
+    }
+    @include media-breakpoint-down(md) {
+      margin: 0 2rem;
+      height: 38rem !important;
+    }
+    @include media-breakpoint-down(lg) {
+      height: 40rem !important;
+      h3 {
+        font-size: 2rem !important;
+      }
+    }
+  }
+  &__prev,
+  &__next {
+    height: 4.6rem;
+    width: 4.6rem;
+    border-radius: 100%;
+    background-color: rgba($color-greywhite, 0.5);
+    border: 1px solid $color-orange;
+  }
+  &__dots {
+    display: flex;
+    justify-content: center;
+    position: absolute;
+    bottom: 2rem;
+    left: 50%;
+    transform: translateX(-50%);
+    .c-car__dot {
+      height: 4.6rem;
+      width: 4.6rem;
+      border-radius: 100%;
+      background-color: rgba($color-greywhite, 0.5);
+      /* margin: 6.4rem 1rem; */
+    }
+  }
+}
+.glider-dot {
+  height: 4.6rem;
+  width: 4.6rem;
+  border-radius: 100%;
+  background-color: rgba($color-greywhite, 0.5);
+  /* margin: 8rem 1rem;
+        margin-bottom: 10rem; */
+  transition: all 0.4s ease;
+  position: relative;
+  &::after {
+    content: "";
+    position: absolute;
+    opacity: 0;
+    width: 1.8rem;
+    height: 1.8rem;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: rgba($color-orange, 0.85);
+    border-radius: 100%;
+    transition: all 0.4s ease;
+  }
+  &.active,
+  &:hover,
+  &:focus {
+    &::after {
+      content: "";
+      position: absolute;
+      opacity: 1;
+      transition: all 0.4s ease;
+    }
+  }
+  @include media-breakpoint-down(md) {
+    height: 3rem;
+    width: 3rem;
+    &::after {
+      height: 1rem;
+      width: 1rem;
+    }
+  }
+  @include media-breakpoint-down(sm) {
+    height: 2rem;
+    width: 2rem;
+    &::after {
+      height: 0.5rem;
+      width: 0.5rem;
+    }
+  }
+}

@@ -797,7 +797,7 @@ li a {
 }
 
 .c-portfolio__item::before {
-  content: '';
+  content: "";
   width: 25.2rem;
   height: 34.6rem;
   position: absolute;
@@ -1763,6 +1763,204 @@ body {
   color: white;
   margin: auto;
   height: 100%;
+}
+
+.c-car {
+  position: relative;
+  box-sizing: border-box;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  background: linear-gradient(0deg, rgba(233, 78, 30, 0.65), rgba(233, 78, 30, 0.65)), url(../img/buizen.jpg);
+  height: 77vh;
+  width: 100vw;
+  /*    &__bg{
+        width: 100%;
+        height: 100%;
+         position: relative;
+        img{
+            position: absolute;
+            z-index: -100;
+        } 
+    }*/
+}
+
+@media (min-width: 992px) and (max-width: 1687.98px) {
+  .c-car {
+    height: 66rem;
+  }
+}
+
+@media (max-width: 991.98px) {
+  .c-car {
+    height: 60rem;
+  }
+}
+
+.c-car__container {
+  display: flex;
+  flex-direction: row;
+  padding: 10rem 10%;
+  padding-bottom: 0;
+  height: 70rem;
+}
+
+@media (max-width: 991.98px) {
+  .c-car__container {
+    height: 55rem;
+  }
+}
+
+.c-car__div {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 46vh !important;
+  /* width: 65rem!important; */
+  margin: 0 6.2rem;
+  background-color: rgba(247, 248, 249, 0.75);
+}
+
+.c-car__div h3 {
+  margin: 2rem;
+}
+
+.c-car__div img {
+  align-self: center;
+  width: 75%;
+  max-height: 55%;
+}
+
+.c-car__div hr {
+  background-color: #e94e1e;
+  color: #e94e1e;
+  box-shadow: none;
+  text-shadow: none;
+  height: 1px;
+  width: 100%;
+  border-style: none;
+}
+
+.c-car__div p {
+  /* border-top: 1px solid  $color-orange;*/
+  margin: 5%;
+  font-family: "Roboto", sans-serif;
+  font-size: 1.6rem;
+  margin-top: 0;
+}
+
+@media (min-width: 1200px) {
+  .c-car__div p {
+    font-size: 1.8rem;
+  }
+}
+
+@media (max-width: 991.98px) {
+  .c-car__div p {
+    font-size: 1.4rem;
+  }
+}
+
+@media (max-width: 1687.98px) {
+  .c-car__div {
+    margin: 0 2.8rem;
+    height: 42rem !important;
+  }
+}
+
+@media (max-width: 991.98px) {
+  .c-car__div {
+    margin: 0 2rem;
+    height: 38rem !important;
+  }
+}
+
+@media (max-width: 1199.98px) {
+  .c-car__div {
+    height: 40rem !important;
+  }
+  .c-car__div h3 {
+    font-size: 2rem !important;
+  }
+}
+
+.c-car__prev, .c-car__next {
+  height: 4.6rem;
+  width: 4.6rem;
+  border-radius: 100%;
+  background-color: rgba(247, 248, 249, 0.5);
+  border: 1px solid #e94e1e;
+}
+
+.c-car__dots {
+  display: flex;
+  justify-content: center;
+  position: absolute;
+  bottom: 2rem;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.c-car__dots .c-car__dot {
+  height: 4.6rem;
+  width: 4.6rem;
+  border-radius: 100%;
+  background-color: rgba(247, 248, 249, 0.5);
+  /* margin: 6.4rem 1rem; */
+}
+
+.glider-dot {
+  height: 4.6rem;
+  width: 4.6rem;
+  border-radius: 100%;
+  background-color: rgba(247, 248, 249, 0.5);
+  /* margin: 8rem 1rem;
+        margin-bottom: 10rem; */
+  transition: all 0.4s ease;
+  position: relative;
+}
+
+.glider-dot::after {
+  content: "";
+  position: absolute;
+  opacity: 0;
+  width: 1.8rem;
+  height: 1.8rem;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: rgba(233, 78, 30, 0.85);
+  border-radius: 100%;
+  transition: all 0.4s ease;
+}
+
+.glider-dot.active::after, .glider-dot:hover::after, .glider-dot:focus::after {
+  content: "";
+  position: absolute;
+  opacity: 1;
+  transition: all 0.4s ease;
+}
+
+@media (max-width: 991.98px) {
+  .glider-dot {
+    height: 3rem;
+    width: 3rem;
+  }
+  .glider-dot::after {
+    height: 1rem;
+    width: 1rem;
+  }
+}
+
+@media (max-width: 767.98px) {
+  .glider-dot {
+    height: 2rem;
+    width: 2rem;
+  }
+  .glider-dot::after {
+    height: 0.5rem;
+    width: 0.5rem;
+  }
 }
 
 /*# sourceMappingURL=screen.css.map */
