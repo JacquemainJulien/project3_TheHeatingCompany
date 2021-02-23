@@ -1811,6 +1811,12 @@ body {
   }
 }
 
+@media (max-width: 767.98px) {
+  .c-car__container {
+    padding: 10rem 0;
+  }
+}
+
 .c-car__div {
   display: flex;
   flex-direction: column;
@@ -1819,6 +1825,16 @@ body {
   /* width: 65rem!important; */
   margin: 0 6.2rem;
   background-color: rgba(247, 248, 249, 0.75);
+}
+
+.c-car__div:last-child {
+  margin-right: 10%;
+}
+
+@media (max-width: 767.98px) {
+  .c-car__div:last-child {
+    margin-right: 2rem;
+  }
 }
 
 .c-car__div h3 {
@@ -1841,23 +1857,41 @@ body {
   border-style: none;
 }
 
-.c-car__div p {
+.c-car__div .c-car__txt {
+  height: 40%;
+}
+
+.c-car__div .c-car__txt p {
   /* border-top: 1px solid  $color-orange;*/
   margin: 5%;
   font-family: "Roboto", sans-serif;
   font-size: 1.6rem;
   margin-top: 0;
+  /*  margin-bottom: 4rem; */
 }
 
 @media (min-width: 1200px) {
-  .c-car__div p {
+  .c-car__div .c-car__txt p {
     font-size: 1.8rem;
+    margin-bottom: 6.2rem;
   }
 }
 
-@media (max-width: 991.98px) {
-  .c-car__div p {
+@media (max-width: 767.98px) {
+  .c-car__div .c-car__txt p {
     font-size: 1.4rem;
+  }
+}
+
+@media (max-width: 575.98px) {
+  .c-car__div .c-car__txt {
+    height: 50%;
+  }
+}
+
+@media (min-width: 1688px) {
+  .c-car__div .c-car__txt {
+    height: 30%;
   }
 }
 
@@ -1918,6 +1952,12 @@ body {
         margin-bottom: 10rem; */
   transition: all 0.4s ease;
   position: relative;
+}
+
+@media (min-width: 992px) {
+  .glider-dot {
+    margin: 1rem 1.5rem !important;
+  }
 }
 
 .glider-dot::after {
