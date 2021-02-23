@@ -36,6 +36,9 @@
     @include media-breakpoint-down(md) {
       height: 55rem;
     }
+    @include media-breakpoint-between(xxs, sm){
+      padding: 10rem 0;
+    }
   }
   &__div {
     display: flex;
@@ -45,6 +48,12 @@
     /* width: 65rem!important; */
     margin: 0 6.2rem;
     background-color: rgba($color-greywhite, 0.75);
+    &:last-child{
+      margin-right: 10%;
+      @include media-breakpoint-between(xxs, sm){
+        margin-right: 2rem;
+      }
+    }
     h3 {
       margin: 2rem;
     }
@@ -62,17 +71,28 @@
       width: 100%;
       border-style: none;
     }
-    p {
-      /* border-top: 1px solid  $color-orange;*/
-      margin: 5%;
-      font-family: $Roboto-light;
-      font-size: 1.6rem;
-      margin-top: 0;
-      @include media-breakpoint-up(xl) {
-        font-size: 1.8rem;
+    .c-car__txt{
+      height: 40%;
+      p {
+        /* border-top: 1px solid  $color-orange;*/
+        margin: 5%;
+        font-family: $Roboto-light;
+        font-size: 1.6rem;
+        margin-top: 0;
+       /*  margin-bottom: 4rem; */
+        @include media-breakpoint-up(xl) {
+          font-size: 1.8rem;
+          margin-bottom: 6.2rem;
+        }
+        @include media-breakpoint-down(sm) {
+          font-size: 1.4rem;
+        }
       }
-      @include media-breakpoint-down(md) {
-        font-size: 1.4rem;
+      @include media-breakpoint-down(xs){
+        height: 50%;
+      }
+      @include media-breakpoint-up(xxl){
+        height: 30%;
       }
     }
     @include media-breakpoint-down(xl) {
@@ -123,6 +143,9 @@
         margin-bottom: 10rem; */
   transition: all 0.4s ease;
   position: relative;
+  @include media-breakpoint-up(lg){
+    margin: 1rem 1.5rem !important;
+  }
   &::after {
     content: "";
     position: absolute;
